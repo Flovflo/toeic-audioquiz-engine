@@ -1,0 +1,89 @@
+{
+    "part": 3,
+    "conversations": [
+      {
+        "id": 1,
+        "context": "Two colleagues discussing a project deadline at the office.",
+        "dialogue": [
+          { "speaker": "Man", "text": "Hey Susan, have you finished the report for the Anderson project?" },
+          { "speaker": "Woman", "text": "Not yet. I’m still waiting on the latest figures from the sales department." },
+          { "speaker": "Man", "text": "Oh, I thought they sent those out yesterday." },
+          { "speaker": "Woman", "text": "Apparently there was a delay. They promised to send them by noon today." }
+        ],
+        "questions": [
+          {
+            "question": "What are the speakers mainly discussing?",
+            "choices": {
+              "A": "A sales meeting schedule",
+              "B": "A delayed report",
+              "C": "A product launch",
+              "D": "A client's feedback"
+            },
+            "answer": "B"
+          },
+          {
+            "question": "Why hasn't the report been completed?",
+            "choices": {
+              "A": "The client changed the deadline",
+              "B": "A printer malfunctioned",
+              "C": "Sales figures have not been received",
+              "D": "The manager is out of office"
+            },
+            "answer": "C"
+          },
+          {
+            "question": "What is expected to happen by noon?",
+            "choices": {
+              "A": "A team meeting",
+              "B": "The report will be printed",
+              "C": "The sales department will send data",
+              "D": "The report will be emailed"
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "A customer speaking with a hotel receptionist about a reservation.",
+        "dialogue": [
+          { "speaker": "Woman", "text": "Good afternoon, I have a reservation under the name Miller." },
+          { "speaker": "Man", "text": "Let me check... Yes, I see it here. One queen-size room for two nights." },
+          { "speaker": "Woman", "text": "That’s right, but I’d like to change it to a king-size if available." },
+          { "speaker": "Man", "text": "Let me see... Yes, we do have one available. There’s a small upgrade fee." }
+        ],
+        "questions": [
+          {
+            "question": "Where is the conversation taking place?",
+            "choices": {
+              "A": "At a restaurant",
+              "B": "In a bank",
+              "C": "At a hotel",
+              "D": "In an airport lounge"
+            },
+            "answer": "C"
+          },
+          {
+            "question": "What does the woman want to change?",
+            "choices": {
+              "A": "The length of her stay",
+              "B": "The type of bed in the room",
+              "C": "Her check-in time",
+              "D": "Her payment method"
+            },
+            "answer": "B"
+          },
+          {
+            "question": "What does the man say about the change?",
+            "choices": {
+              "A": "It is not possible today",
+              "B": "It requires an extra payment",
+              "C": "It has already been done",
+              "D": "It was requested online"
+            },
+            "answer": "B"
+          }
+        ]
+      }
+    ]
+  }

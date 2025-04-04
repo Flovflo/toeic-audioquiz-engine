@@ -1,0 +1,104 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "audioPrompt": "Where is the nearest train station?",
+        "choices": {
+          "A": "It leaves every thirty minutes.",
+          "B": "Two blocks from here.",
+          "C": "Yes, I bought a ticket."
+        },
+        "answer": "B"
+      },
+      {
+        "id": 2,
+        "audioPrompt": "Did you receive the meeting agenda?",
+        "choices": {
+          "A": "No, I think it was sent to James.",
+          "B": "Yes, it starts at ten o’clock.",
+          "C": "Let’s meet in the main hall."
+        },
+        "answer": "A"
+      },
+      {
+        "id": 3,
+        "audioPrompt": "Who's responsible for the client presentation?",
+        "choices": {
+          "A": "It was very impressive.",
+          "B": "I think Mr. Nakamura is.",
+          "C": "We presented it yesterday."
+        },
+        "answer": "B"
+      },
+      {
+        "id": 4,
+        "audioPrompt": "Could you help me carry these boxes upstairs?",
+        "choices": {
+          "A": "Sure, just give me a second.",
+          "B": "No, I haven't seen the boxes.",
+          "C": "They’re upstairs already."
+        },
+        "answer": "A"
+      },
+      {
+        "id": 5,
+        "audioPrompt": "When will the new software be installed?",
+        "choices": {
+          "A": "In the IT department.",
+          "B": "Probably next Monday.",
+          "C": "Yes, it is very useful."
+        },
+        "answer": "B"
+      },
+      {
+        "id": 6,
+        "audioPrompt": "Why didn’t you attend the quarterly review meeting?",
+        "choices": {
+          "A": "No, I didn’t review it yet.",
+          "B": "I had a conflict with another appointment.",
+          "C": "Yes, the meeting was quarterly."
+        },
+        "answer": "B"
+      },
+      {
+        "id": 7,
+        "audioPrompt": "Would you mind proofreading this report before lunch?",
+        "choices": {
+          "A": "No, I wouldn’t at all.",
+          "B": "Yes, I have lunch every day.",
+          "C": "It’s a very detailed report."
+        },
+        "answer": "A"
+      },
+      {
+        "id": 8,
+        "audioPrompt": "How long did it take to process the visa application?",
+        "choices": {
+          "A": "It was approved last week.",
+          "B": "About three business days.",
+          "C": "I’ll apply for one tomorrow."
+        },
+        "answer": "B"
+      },
+      {
+        "id": 9,
+        "audioPrompt": "You’re attending the cybersecurity conference next week, aren’t you?",
+        "choices": {
+          "A": "I haven’t received confirmation yet.",
+          "B": "Yes, it’s about IT security.",
+          "C": "It was held last month."
+        },
+        "answer": "A"
+      },
+      {
+        "id": 10,
+        "audioPrompt": "Has the supplier responded to your inquiry yet?",
+        "choices": {
+          "A": "They’re supposed to ship today.",
+          "B": "No, I'm still waiting to hear back.",
+          "C": "It’s a reliable supplier."
+        },
+        "answer": "B"
+      }
+    ]
+  }
