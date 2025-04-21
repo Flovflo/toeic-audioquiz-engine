@@ -19,8 +19,8 @@ FEMALE_VOICES = [
     "EXAVITQu4vr4xnSDxMaL",
     "pjcYQlDFKMbcOUp6F5GD",  
 ]
-OUTPUT_DIR = os.getenv("OUTPUT_DIR")
-INPUT_JSON_FILE = os.getenv("INPUT_JSON_FILE")
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "output")
+INPUT_JSON_FILE = os.getenv("INPUT_JSON_FILE", "questions.json")
 MODEL_ID = os.getenv("MODEL_ID")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -50,7 +50,11 @@ def generate_speech(text, voice_id):
     else:
         raise Exception(f"Erreur génération audio : {response.status_code} - {response.text}")
 
-def generate_question_audio(question_id, prompt, choices):
+def generate_question_audio(question):
+    question_id = question["id"]
+    prompt = question.get("audioPrompt", "")
+    choices_list = question.get("choices", [])
+
     print(f"\n🎙️ Traitement de la question ID {question_id}...")
 
     male_voice = random.choice(MALE_VOICES)
@@ -58,25 +62,35 @@ def generate_question_audio(question_id, prompt, choices):
     print(f"  ➤ Voix question : {male_voice}")
     print(f"  ➤ Voix choix    : {female_voice}")
 
+    # Génération de l'audio du prompt
     prompt_audio = generate_speech(prompt, male_voice)
 
-    choices_text = "\n".join([f"{key}: {value}" for key, value in choices.items()])
-    choices_audio = generate_speech(choices_text, female_voice)
+    # Pause après la question (1,5 s ici, tu peux ajuster)
+    pause_q_c = AudioSegment.silent(duration=1500)
 
-    silence = AudioSegment.silent(duration=500)
-    final_audio = prompt_audio + silence + choices_audio
+    # Génération individuelle de chaque choix, avec pause de 1 s entre eux
+    choices_audio = AudioSegment.empty()
+    pause_between = AudioSegment.silent(duration=1000)
+    for choice in choices_list:
+        text_choice = f"{choice['label']}: {choice['text']}"
+        audio_choice = generate_speech(text_choice, female_voice)
+        choices_audio += audio_choice + pause_between
+
+    # Assemblage final
+    final_audio = prompt_audio + pause_q_c + choices_audio
 
     output_file = os.path.join(OUTPUT_DIR, f"question_{question_id}.mp3")
     final_audio.export(output_file, format="mp3")
 
     print(f"✅ Audio généré : {output_file}")
-
-with open(INPUT_JSON_FILE, "r") as f:
+    
+# Lecture du fichier JSON contenant 'part', 'type' et 'questions'
+with open(INPUT_JSON_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-for question in data["questions"]:
-    generate_question_audio(
-        question_id=question["id"],
-        prompt=question["audioPrompt"],
-        choices=question["choices"]
-    )
+# Optionnel : afficher les métadonnées
+print(f"Part: {data.get('part')}, Type: {data.get('type')}")
+
+# Génération audio pour chaque question
+for question in data.get("questions", []):
+    generate_question_audio(question)

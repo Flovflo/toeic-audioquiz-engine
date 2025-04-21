@@ -1,104 +1,617 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "audioPrompt": "Where is the nearest train station?",
-        "choices": {
-          "A": "It leaves every thirty minutes.",
-          "B": "Two blocks from here.",
-          "C": "Yes, I bought a ticket."
-        },
-        "answer": "B"
-      },
-      {
-        "id": 2,
-        "audioPrompt": "Did you receive the meeting agenda?",
-        "choices": {
-          "A": "No, I think it was sent to James.",
-          "B": "Yes, it starts at ten o’clock.",
-          "C": "Let’s meet in the main hall."
-        },
-        "answer": "A"
-      },
-      {
-        "id": 3,
-        "audioPrompt": "Who's responsible for the client presentation?",
-        "choices": {
-          "A": "It was very impressive.",
-          "B": "I think Mr. Nakamura is.",
-          "C": "We presented it yesterday."
-        },
-        "answer": "B"
-      },
-      {
-        "id": 4,
-        "audioPrompt": "Could you help me carry these boxes upstairs?",
-        "choices": {
-          "A": "Sure, just give me a second.",
-          "B": "No, I haven't seen the boxes.",
-          "C": "They’re upstairs already."
-        },
-        "answer": "A"
-      },
-      {
-        "id": 5,
-        "audioPrompt": "When will the new software be installed?",
-        "choices": {
-          "A": "In the IT department.",
-          "B": "Probably next Monday.",
-          "C": "Yes, it is very useful."
-        },
-        "answer": "B"
-      },
-      {
-        "id": 6,
-        "audioPrompt": "Why didn’t you attend the quarterly review meeting?",
-        "choices": {
-          "A": "No, I didn’t review it yet.",
-          "B": "I had a conflict with another appointment.",
-          "C": "Yes, the meeting was quarterly."
-        },
-        "answer": "B"
-      },
-      {
-        "id": 7,
-        "audioPrompt": "Would you mind proofreading this report before lunch?",
-        "choices": {
-          "A": "No, I wouldn’t at all.",
-          "B": "Yes, I have lunch every day.",
-          "C": "It’s a very detailed report."
-        },
-        "answer": "A"
-      },
-      {
-        "id": 8,
-        "audioPrompt": "How long did it take to process the visa application?",
-        "choices": {
-          "A": "It was approved last week.",
-          "B": "About three business days.",
-          "C": "I’ll apply for one tomorrow."
-        },
-        "answer": "B"
-      },
-      {
-        "id": 9,
-        "audioPrompt": "You’re attending the cybersecurity conference next week, aren’t you?",
-        "choices": {
-          "A": "I haven’t received confirmation yet.",
-          "B": "Yes, it’s about IT security.",
-          "C": "It was held last month."
-        },
-        "answer": "A"
-      },
-      {
-        "id": 10,
-        "audioPrompt": "Has the supplier responded to your inquiry yet?",
-        "choices": {
-          "A": "They’re supposed to ship today.",
-          "B": "No, I'm still waiting to hear back.",
-          "C": "It’s a reliable supplier."
-        },
-        "answer": "B"
-      }
-    ]
-  }
+  "part": 2,
+  "type": "question-response",
+  "questions": [
+    {
+      "id": 1,
+      "audioPrompt": "Where is the nearest train station?",
+      "choices": [
+        { "label": "A", "text": "It leaves every thirty minutes." },
+        { "label": "B", "text": "Two blocks from here." },
+        { "label": "C", "text": "Yes, I bought a ticket." }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": 2,
+      "audioPrompt": "Did you receive the meeting agenda?",
+      "choices": [
+        { "label": "A", "text": "No, I think it was sent to James." },
+        { "label": "B", "text": "Yes, it starts at ten o’clock." },
+        { "label": "C", "text": "Let’s meet in the main hall." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "audioPrompt": "Why did Mr. Lee cancel the presentation?",
+      "choices": [
+        { "label": "A", "text": "Because he had a scheduling conflict." },
+        { "label": "B", "text": "Yes, it was very impressive." },
+        { "label": "C", "text": "At the downtown conference center." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "audioPrompt": "How often do you update the inventory report?",
+      "choices": [
+        { "label": "A", "text": "It’s stored on the shared drive." },
+        { "label": "B", "text": "Every Friday before noon." },
+        { "label": "C", "text": "The report was very detailed." }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "audioPrompt": "Should we contact the supplier or wait for their reply?",
+      "choices": [
+        { "label": "A", "text": "Let’s give them another day." },
+        { "label": "B", "text": "Yes, they delivered on time." },
+        { "label": "C", "text": "The supplier is very reliable." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 6,
+      "audioPrompt": "When is the deadline for submitting the expense reports?",
+      "choices": [
+        { "label": "A", "text": "It was extended to next Monday." },
+        { "label": "B", "text": "Please send it to Mr. Tanaka." },
+        { "label": "C", "text": "No, I haven’t received the receipts." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "audioPrompt": "Who’s responsible for reviewing the new budget proposal?",
+      "choices": [
+        { "label": "A", "text": "The finance department will handle it." },
+        { "label": "B", "text": "It was submitted last week." },
+        { "label": "C", "text": "We’ve already printed copies." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "audioPrompt": "Didn’t you already finish the monthly report?",
+      "choices": [
+        { "label": "A", "text": "No, I’m still working on the final section." },
+        { "label": "B", "text": "Yes, he usually reports to me." },
+        { "label": "C", "text": "I saw it on my desk this morning." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "audioPrompt": "What time does the client meeting start?",
+      "choices": [
+        { "label": "A", "text": "Yes, I’ve already met him." },
+        { "label": "B", "text": "At 2:30 in the main conference room." },
+        { "label": "C", "text": "It lasted almost two hours." }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": 10,
+      "audioPrompt": "Where should I send the signed contract?",
+      "choices": [
+        { "label": "A", "text": "To the legal department by email." },
+        { "label": "B", "text": "He signed it this morning." },
+        { "label": "C", "text": "Because the deadline is today." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "audioPrompt": "Has the package been delivered yet?",
+      "choices": [
+        { "label": "A", "text": "It should arrive by noon." },
+        { "label": "B", "text": "No, I ordered it yesterday." },
+        { "label": "C", "text": "Yes, I packed it myself." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "audioPrompt": "Why was the project delayed again?",
+      "choices": [
+        { "label": "A", "text": "Due to a supplier issue." },
+        { "label": "B", "text": "It’s scheduled for tomorrow." },
+        { "label": "C", "text": "I received the files already." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 13,
+      "audioPrompt": "Who will be leading the training session tomorrow?",
+      "choices": [
+        { "label": "A", "text": "I believe Mr. Donovan will." },
+        { "label": "B", "text": "Yes, it's scheduled for 10 A.M." },
+        { "label": "C", "text": "In the large meeting room." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "audioPrompt": "Are you planning to attend the annual conference?",
+      "choices": [
+        { "label": "A", "text": "Yes, I registered last week." },
+        { "label": "B", "text": "It was very informative." },
+        { "label": "C", "text": "At the Hilton downtown." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "audioPrompt": "How do I request time off for next month?",
+      "choices": [
+        { "label": "A", "text": "You need to fill out the online form." },
+        { "label": "B", "text": "Yes, I had a great time." },
+        { "label": "C", "text": "Two weeks from now." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "audioPrompt": "Was the team satisfied with the new software update?",
+      "choices": [
+        { "label": "A", "text": "No, they encountered several bugs." },
+        { "label": "B", "text": "It's available on the website." },
+        { "label": "C", "text": "Yes, we’ll update it soon." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "audioPrompt": "Why didn’t you include the sales forecast in the report?",
+      "choices": [
+        { "label": "A", "text": "I didn’t receive the data in time." },
+        { "label": "B", "text": "It’s about next quarter." },
+        { "label": "C", "text": "Yes, the forecast was excellent." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "audioPrompt": "When will the new office supplies arrive?",
+      "choices": [
+        { "label": "A", "text": "They should be here by Friday." },
+        { "label": "B", "text": "I ordered them last week." },
+        { "label": "C", "text": "Yes, I’ll take care of it." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "audioPrompt": "Where can I find the latest project updates?",
+      "choices": [
+        { "label": "A", "text": "On the company intranet." },
+        { "label": "B", "text": "Yes, I’ll send it to you." },
+        { "label": "C", "text": "It’s in the main conference room." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "audioPrompt": "Who is responsible for organizing the team-building event?",
+      "choices": [
+        { "label": "A", "text": "That would be Sarah from HR." },
+        { "label": "B", "text": "Yes, I’ll be attending." },
+        { "label": "C", "text": "It’s scheduled for next month." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "audioPrompt": "What’s the best way to contact the IT department?",
+      "choices": [
+        { "label": "A", "text": "By sending an email to support." },
+        { "label": "B", "text": "Yes, I’ll forward it to you." },
+        { "label": "C", "text": "It’s located on the second floor." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "audioPrompt": "When is the deadline for submitting the project proposal?",
+      "choices": [
+        { "label": "A", "text": "It’s due by the end of the month." },
+        { "label": "B", "text": "Yes, I’ll review it later." },
+        { "label": "C", "text": "In the conference room." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "audioPrompt": "Did you finish the presentation slides?",
+      "choices": [
+        { "label": "A", "text": "Yes, I sent them to you." },
+        { "label": "B", "text": "No, I’m still working on them." },
+        { "label": "C", "text": "It’s in the shared folder." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "audioPrompt": "Where should we hold the next team meeting?",
+      "choices": [
+        { "label": "A", "text": "In the large conference room." },
+        { "label": "B", "text": "Yes, I’ll be there." },
+        { "label": "C", "text": "It’s scheduled for next week." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 25,
+      "audioPrompt": "How do I access the employee handbook?",
+      "choices": [
+        { "label": "A", "text": "It’s available on the company website." },
+        { "label": "B", "text": "Yes, I’ll send it to you." },
+        { "label": "C", "text": "In the HR department." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "audioPrompt": "Could you reschedule the meeting for later this week?",
+      "choices": [
+        { "label": "A", "text": "Sure, Thursday afternoon would work." },
+        { "label": "B", "text": "No, I didn’t attend it." },
+        { "label": "C", "text": "Yes, it was very informative." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 27,
+      "audioPrompt": "What’s the best way to reach the customer service department?",
+      "choices": [
+        { "label": "A", "text": "You can call the extension 304." },
+        { "label": "B", "text": "It’s open until 6 P.M." },
+        { "label": "C", "text": "No, they didn’t reply yet." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 28,
+      "audioPrompt": "When did the shipment arrive at the warehouse?",
+      "choices": [
+        { "label": "A", "text": "Yesterday morning around 9." },
+        { "label": "B", "text": "It will be shipped by truck." },
+        { "label": "C", "text": "Yes, it’s been delivered." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 29,
+      "audioPrompt": "Is the manager available to sign these documents now?",
+      "choices": [
+        { "label": "A", "text": "He’s in a meeting until noon." },
+        { "label": "B", "text": "No, I didn’t sign it." },
+        { "label": "C", "text": "Yes, they are very important." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 30,
+      "audioPrompt": "How many people attended the safety seminar?",
+      "choices": [
+        { "label": "A", "text": "Around fifty, including new staff." },
+        { "label": "B", "text": "It was about workplace security." },
+        { "label": "C", "text": "The seminar starts at ten." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 31,
+      "audioPrompt": "Why wasn’t the financial report submitted on time?",
+      "choices": [
+        { "label": "A", "text": "Because we were waiting for final numbers." },
+        { "label": "B", "text": "Yes, I submitted it early." },
+        { "label": "C", "text": "The manager reviewed it yesterday." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 32,
+      "audioPrompt": "Has the IT team fixed the issue with the login system?",
+      "choices": [
+        { "label": "A", "text": "Yes, everything's working fine now." },
+        { "label": "B", "text": "The password needs to be reset." },
+        { "label": "C", "text": "No, I haven’t logged in yet." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "audioPrompt": "Who’s responsible for organizing the charity event this year?",
+      "choices": [
+        { "label": "A", "text": "That would be Rachel from PR." },
+        { "label": "B", "text": "It takes place every June." },
+        { "label": "C", "text": "Yes, I’m donating clothes." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 34,
+      "audioPrompt": "Would you like me to print a copy of the schedule for you?",
+      "choices": [
+        { "label": "A", "text": "Yes, that would be helpful." },
+        { "label": "B", "text": "The printer is out of paper." },
+        { "label": "C", "text": "No, it’s in the drawer." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "audioPrompt": "When will the final interview results be announced?",
+      "choices": [
+        { "label": "A", "text": "Probably early next week." },
+        { "label": "B", "text": "Yes, I met the HR director." },
+        { "label": "C", "text": "They asked a lot of questions." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 36,
+      "audioPrompt": "Where did you put the signed delivery receipt?",
+      "choices": [
+        { "label": "A", "text": "On your desk, next to the laptop." },
+        { "label": "B", "text": "It arrived this morning." },
+        { "label": "C", "text": "No, I haven’t signed it." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 37,
+      "audioPrompt": "Has the advertising budget been approved yet?",
+      "choices": [
+        { "label": "A", "text": "Not yet, we’re still waiting for approval." },
+        { "label": "B", "text": "The ad will run next week." },
+        { "label": "C", "text": "Yes, it’s in the folder." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 38,
+      "audioPrompt": "Why are the lights in the hallway off?",
+      "choices": [
+        { "label": "A", "text": "There’s a power maintenance going on." },
+        { "label": "B", "text": "Yes, it’s very bright there." },
+        { "label": "C", "text": "They usually turn off around 10." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 39,
+      "audioPrompt": "Should we use the larger room for the orientation?",
+      "choices": [
+        { "label": "A", "text": "Yes, we’re expecting more people." },
+        { "label": "B", "text": "The orientation went well." },
+        { "label": "C", "text": "It’s on the third floor." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 40,
+      "audioPrompt": "Who’s going to chair the board meeting this quarter?",
+      "choices": [
+        { "label": "A", "text": "Ms. Reynolds from the finance team." },
+        { "label": "B", "text": "It’ll be in the large conference room." },
+        { "label": "C", "text": "Yes, it’s scheduled for Friday." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 80,
+      "audioPrompt": "Didn’t the CEO mention a new partnership during the meeting?",
+      "choices": [
+        { "label": "A", "text": "Yes, with a tech company based in Berlin." },
+        { "label": "B", "text": "No, I wasn’t at the meeting." },
+        { "label": "C", "text": "It was about marketing strategies." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 81,
+      "audioPrompt": "What’s the procedure for reporting a technical issue?",
+      "choices": [
+        { "label": "A", "text": "You have to open a ticket through the IT portal." },
+        { "label": "B", "text": "Yes, it’s a technical issue." },
+        { "label": "C", "text": "He reported it yesterday." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 82,
+      "audioPrompt": "Why is the delivery truck parked outside?",
+      "choices": [
+        { "label": "A", "text": "Because they’re unloading supplies." },
+        { "label": "B", "text": "Yes, it’s parked legally." },
+        { "label": "C", "text": "It arrived at 10 a.m." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 83,
+      "audioPrompt": "Who was assigned to lead the product launch campaign?",
+      "choices": [
+        { "label": "A", "text": "Samantha, from the creative team." },
+        { "label": "B", "text": "It’s launching next quarter." },
+        { "label": "C", "text": "Yes, we met yesterday." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 84,
+      "audioPrompt": "Should I book the catering service now or wait for confirmation?",
+      "choices": [
+        { "label": "A", "text": "Let’s wait until the headcount is final." },
+        { "label": "B", "text": "Yes, the food was delicious." },
+        { "label": "C", "text": "It’s a local catering company." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 85,
+      "audioPrompt": "When are we expected to receive the final design files?",
+      "choices": [
+        { "label": "A", "text": "By the end of this week, according to the team." },
+        { "label": "B", "text": "They were very well-designed." },
+        { "label": "C", "text": "Yes, we got them yesterday." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 86,
+      "audioPrompt": "Is there a backup generator in case of a power failure?",
+      "choices": [
+        { "label": "A", "text": "Yes, it activates automatically." },
+        { "label": "B", "text": "No, we don’t use much power." },
+        { "label": "C", "text": "The lights are back on now." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 87,
+      "audioPrompt": "How will the changes in the policy affect remote workers?",
+      "choices": [
+        { "label": "A", "text": "They’ll need to log in through the VPN daily." },
+        { "label": "B", "text": "Yes, the policy has changed." },
+        { "label": "C", "text": "Remote work is popular." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 88,
+      "audioPrompt": "Has the client responded to our revised proposal?",
+      "choices": [
+        { "label": "A", "text": "Not yet, but we expect a reply soon." },
+        { "label": "B", "text": "Yes, they revised it." },
+        { "label": "C", "text": "He’s reviewing the file." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 89,
+      "audioPrompt": "Why were the support tickets closed so quickly?",
+      "choices": [
+        { "label": "A", "text": "The issues turned out to be minor." },
+        { "label": "B", "text": "They submitted them last night." },
+        { "label": "C", "text": "No, they’re still open." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 90,
+      "audioPrompt": "Who’s in charge of updating the website content?",
+      "choices": [
+        { "label": "A", "text": "That would be Carla from the media team." },
+        { "label": "B", "text": "Yes, it’s updated regularly." },
+        { "label": "C", "text": "The content was approved." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 91,
+      "audioPrompt": "Where can I find the user manuals for this device?",
+      "choices": [
+        { "label": "A", "text": "They’re available on the support page." },
+        { "label": "B", "text": "It’s a wireless device." },
+        { "label": "C", "text": "No, I haven’t used it yet." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 92,
+      "audioPrompt": "Did the repairs on the heating system get completed?",
+      "choices": [
+        { "label": "A", "text": "Yes, the technician finished earlier today." },
+        { "label": "B", "text": "No, the heating system works well." },
+        { "label": "C", "text": "Yes, it was very warm." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 93,
+      "audioPrompt": "What did the regional director say about the new strategy?",
+      "choices": [
+        { "label": "A", "text": "She approved it without changes." },
+        { "label": "B", "text": "Yes, it was new." },
+        { "label": "C", "text": "He arrived from Chicago." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 94,
+      "audioPrompt": "Should we promote the product online or at the trade show?",
+      "choices": [
+        { "label": "A", "text": "Let’s do both to maximize exposure." },
+        { "label": "B", "text": "Yes, we should promote it." },
+        { "label": "C", "text": "No, it’s not available." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 95,
+      "audioPrompt": "Is it necessary to submit travel receipts for reimbursement?",
+      "choices": [
+        { "label": "A", "text": "Yes, for all expenses over $25." },
+        { "label": "B", "text": "No, I haven’t traveled recently." },
+        { "label": "C", "text": "It was a business trip." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 96,
+      "audioPrompt": "When did the factory switch to renewable energy?",
+      "choices": [
+        { "label": "A", "text": "Last January, as part of the green initiative." },
+        { "label": "B", "text": "Yes, we use clean energy." },
+        { "label": "C", "text": "The factory is quite large." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 97,
+      "audioPrompt": "Has the project team finalized the implementation plan?",
+      "choices": [
+        { "label": "A", "text": "Yes, it was completed this morning." },
+        { "label": "B", "text": "They’re planning a launch soon." },
+        { "label": "C", "text": "No, it’s a temporary plan." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 98,
+      "audioPrompt": "Who’s presenting the quarterly results to the board?",
+      "choices": [
+        { "label": "A", "text": "Mr. Jordan, the CFO." },
+        { "label": "B", "text": "Yes, the results are ready." },
+        { "label": "C", "text": "In the main conference room." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 99,
+      "audioPrompt": "Do you know when the HR portal will be back online?",
+      "choices": [
+        { "label": "A", "text": "IT said it’ll be fixed by this afternoon." },
+        { "label": "B", "text": "Yes, the portal is helpful." },
+        { "label": "C", "text": "No, it’s an internal tool." }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": 100,
+      "audioPrompt": "Why is the finance report missing last quarter’s figures?",
+      "choices": [
+        { "label": "A", "text": "Because those numbers are still being audited." },
+        { "label": "B", "text": "Yes, I saw the report." },
+        { "label": "C", "text": "They were in the chart." }
+      ],
+      "answer": "A"
+    }
+
+  ]
+}

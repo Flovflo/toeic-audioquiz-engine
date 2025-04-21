@@ -1,89 +1,3156 @@
 {
-    "part": 3,
-    "conversations": [
-      {
-        "id": 1,
-        "context": "Two colleagues discussing a project deadline at the office.",
-        "dialogue": [
-          { "speaker": "Man", "text": "Hey Susan, have you finished the report for the Anderson project?" },
-          { "speaker": "Woman", "text": "Not yet. I’m still waiting on the latest figures from the sales department." },
-          { "speaker": "Man", "text": "Oh, I thought they sent those out yesterday." },
-          { "speaker": "Woman", "text": "Apparently there was a delay. They promised to send them by noon today." }
-        ],
-        "questions": [
-          {
-            "question": "What are the speakers mainly discussing?",
-            "choices": {
-              "A": "A sales meeting schedule",
-              "B": "A delayed report",
-              "C": "A product launch",
-              "D": "A client's feedback"
-            },
-            "answer": "B"
-          },
-          {
-            "question": "Why hasn't the report been completed?",
-            "choices": {
-              "A": "The client changed the deadline",
-              "B": "A printer malfunctioned",
-              "C": "Sales figures have not been received",
-              "D": "The manager is out of office"
-            },
-            "answer": "C"
-          },
-          {
-            "question": "What is expected to happen by noon?",
-            "choices": {
-              "A": "A team meeting",
-              "B": "The report will be printed",
-              "C": "The sales department will send data",
-              "D": "The report will be emailed"
-            },
-            "answer": "C"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "context": "A customer speaking with a hotel receptionist about a reservation.",
-        "dialogue": [
-          { "speaker": "Woman", "text": "Good afternoon, I have a reservation under the name Miller." },
-          { "speaker": "Man", "text": "Let me check... Yes, I see it here. One queen-size room for two nights." },
-          { "speaker": "Woman", "text": "That’s right, but I’d like to change it to a king-size if available." },
-          { "speaker": "Man", "text": "Let me see... Yes, we do have one available. There’s a small upgrade fee." }
-        ],
-        "questions": [
-          {
-            "question": "Where is the conversation taking place?",
-            "choices": {
-              "A": "At a restaurant",
-              "B": "In a bank",
-              "C": "At a hotel",
-              "D": "In an airport lounge"
-            },
-            "answer": "C"
-          },
-          {
-            "question": "What does the woman want to change?",
-            "choices": {
-              "A": "The length of her stay",
-              "B": "The type of bed in the room",
-              "C": "Her check-in time",
-              "D": "Her payment method"
-            },
-            "answer": "B"
-          },
-          {
-            "question": "What does the man say about the change?",
-            "choices": {
-              "A": "It is not possible today",
-              "B": "It requires an extra payment",
-              "C": "It has already been done",
-              "D": "It was requested online"
-            },
-            "answer": "B"
-          }
-        ]
-      }
-    ]
-  }
+  "part": 3,
+  "type": "conversations",
+  "conversations": [
+    {
+      "conversationId": 1,
+      "context": "Two colleagues discussing a project deadline at the office.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Hey Susan, have you finished the report for the Anderson project?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Not yet. I’m still waiting on the latest figures from the sales department." },
+        { "sequence": 3, "speaker": "Man", "text": "Oh, I thought they sent those out yesterday." },
+        { "sequence": 4, "speaker": "Woman", "text": "Apparently there was a delay. They promised to send them by noon today." }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "text": "What are the speakers mainly discussing?",
+          "choices": [
+            { "label": "A", "text": "A sales meeting schedule" },
+            { "label": "B", "text": "A delayed report" },
+            { "label": "C", "text": "A product launch" },
+            { "label": "D", "text": "A client's feedback" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 2,
+          "text": "Why hasn't the report been completed?",
+          "choices": [
+            { "label": "A", "text": "The client changed the deadline" },
+            { "label": "B", "text": "A printer malfunctioned" },
+            { "label": "C", "text": "Sales figures have not been received" },
+            { "label": "D", "text": "The manager is out of office" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 3,
+          "text": "What is expected to happen by noon?",
+          "choices": [
+            { "label": "A", "text": "A team meeting" },
+            { "label": "B", "text": "The report will be printed" },
+            { "label": "C", "text": "The sales department will send data" },
+            { "label": "D", "text": "The report will be emailed" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 2,
+      "context": "A customer speaking with a hotel receptionist about a reservation.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Good afternoon, I have a reservation under the name Miller." },
+        { "sequence": 2, "speaker": "Man", "text": "Let me check... Yes, I see it here. One queen-size room for two nights." },
+        { "sequence": 3, "speaker": "Woman", "text": "That’s right, but I’d like to change it to a king-size if available." },
+        { "sequence": 4, "speaker": "Man", "text": "Let me see... Yes, we do have one available. There’s a small upgrade fee." }
+      ],
+      "questions": [
+        {
+          "id": 4,
+          "text": "Where is the conversation taking place?",
+          "choices": [
+            { "label": "A", "text": "At a restaurant" },
+            { "label": "B", "text": "In a bank" },
+            { "label": "C", "text": "At a hotel" },
+            { "label": "D", "text": "In an airport lounge" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 5,
+          "text": "What does the woman want to change?",
+          "choices": [
+            { "label": "A", "text": "The length of her stay" },
+            { "label": "B", "text": "The type of bed in the room" },
+            { "label": "C", "text": "Her check-in time" },
+            { "label": "D", "text": "Her payment method" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 6,
+          "text": "What does the man say about the change?",
+          "choices": [
+            { "label": "A", "text": "It is not possible today" },
+            { "label": "B", "text": "It requires an extra payment" },
+            { "label": "C", "text": "It has already been done" },
+            { "label": "D", "text": "It was requested online" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 3,
+      "context": "An IT manager and a technician discussing a network issue in the office.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did you manage to identify what’s causing the network slowdown?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, it looks like one of the servers is being overloaded due to a scheduled backup running during office hours." },
+        { "sequence": 3, "speaker": "Man", "text": "That would explain it. Can we reschedule the backup for after 6 p.m.?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Sure. I’ll update the cron job and notify the team." }
+      ],
+      "questions": [
+        {
+          "id": 7,
+          "text": "What problem are the speakers trying to solve?",
+          "choices": [
+            { "label": "A", "text": "A data breach" },
+            { "label": "B", "text": "A power outage" },
+            { "label": "C", "text": "Slow network performance" },
+            { "label": "D", "text": "A broken router" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 8,
+          "text": "What caused the issue?",
+          "choices": [
+            { "label": "A", "text": "A hardware malfunction" },
+            { "label": "B", "text": "Too many users downloading files" },
+            { "label": "C", "text": "An improperly configured firewall" },
+            { "label": "D", "text": "A scheduled backup during work hours" }
+          ],
+          "answer": "D"
+        },
+        {
+          "id": 9,
+          "text": "What will the woman do next?",
+          "choices": [
+            { "label": "A", "text": "Install a new server" },
+            { "label": "B", "text": "Disable the backup process" },
+            { "label": "C", "text": "Reschedule the backup and inform the team" },
+            { "label": "D", "text": "Increase the server’s bandwidth" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 4,
+      "context": "A project manager and an assistant discussing a delay in a software development timeline.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "I noticed the beta testing phase has been pushed back by a week. What happened?" },
+        { "sequence": 2, "speaker": "Man", "text": "We had trouble integrating the new payment gateway, so the developers needed extra time." },
+        { "sequence": 3, "speaker": "Woman", "text": "Do you think this will affect our final delivery date?" },
+        { "sequence": 4, "speaker": "Man", "text": "It might, but we’re considering cutting the internal review cycle to make up time." }
+      ],
+      "questions": [
+        {
+          "id": 10,
+          "text": "What is the cause of the delay?",
+          "choices": [
+            { "label": "A", "text": "A lack of testers" },
+            { "label": "B", "text": "Issues with a new feature" },
+            { "label": "C", "text": "Vacation schedules" },
+            { "label": "D", "text": "Server downtime" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 11,
+          "text": "What is being considered to compensate for the delay?",
+          "choices": [
+            { "label": "A", "text": "Hiring more developers" },
+            { "label": "B", "text": "Skipping beta testing" },
+            { "label": "C", "text": "Shortening the review cycle" },
+            { "label": "D", "text": "Increasing the budget" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 12,
+          "text": "What does the woman want to know?",
+          "choices": [
+            { "label": "A", "text": "Whether the developers can handle the new feature" },
+            { "label": "B", "text": "If beta testing is still necessary" },
+            { "label": "C", "text": "How the testing team is performing" },
+            { "label": "D", "text": "If the final deadline will be impacted" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 5,
+      "context": "An HR manager and an employee discussing a training opportunity.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "I saw the email about the leadership workshop next month. Is it open to all departments?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, but priority is given to team leads and those on the management track." },
+        { "sequence": 3, "speaker": "Man", "text": "Makes sense. Do I need my supervisor’s approval to register?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Yes, and once that’s done, you can sign up through the HR portal." }
+      ],
+      "questions": [
+        {
+          "id": 13,
+          "text": "What is the topic of the conversation?",
+          "choices": [
+            { "label": "A", "text": "An internal transfer" },
+            { "label": "B", "text": "A training event" },
+            { "label": "C", "text": "An employee performance review" },
+            { "label": "D", "text": "A salary increase request" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 14,
+          "text": "Who is given priority for the workshop?",
+          "choices": [
+            { "label": "A", "text": "New hires" },
+            { "label": "B", "text": "Finance team members" },
+            { "label": "C", "text": "Managers and team leads" },
+            { "label": "D", "text": "Remote workers" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 15,
+          "text": "What must the man do before signing up?",
+          "choices": [
+            { "label": "A", "text": "Finish his performance review" },
+            { "label": "B", "text": "Contact HR directly" },
+            { "label": "C", "text": "Get his supervisor’s approval" },
+            { "label": "D", "text": "Wait for an invitation" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 6,
+      "context": "Two coworkers discussing a conflict in their meeting schedules.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Hey, do you have a minute? I noticed our weekly meeting overlaps with the new product briefing." },
+        { "sequence": 2, "speaker": "Man", "text": "Oh, really? That wasn’t on my calendar yet. When’s the briefing?" },
+        { "sequence": 3, "speaker": "Woman", "text": "Wednesday at 10 a.m. It’s mandatory for the marketing team." },
+        { "sequence": 4, "speaker": "Man", "text": "Alright, we’ll need to reschedule our meeting then. How about Thursday morning instead?" }
+      ],
+      "questions": [
+        {
+          "id": 16,
+          "text": "What problem are the speakers discussing?",
+          "choices": [
+            { "label": "A", "text": "A technical issue with an online meeting" },
+            { "label": "B", "text": "A conflict between two scheduled events" },
+            { "label": "C", "text": "A delay in a product launch" },
+            { "label": "D", "text": "A missed meeting invitation" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 17,
+          "text": "What does the woman say about the product briefing?",
+          "choices": [
+            { "label": "A", "text": "It has been canceled" },
+            { "label": "B", "text": "It’s optional for most employees" },
+            { "label": "C", "text": "It is mandatory for her department" },
+            { "label": "D", "text": "It was not announced in time" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 18,
+          "text": "What solution does the man propose?",
+          "choices": [
+            { "label": "A", "text": "Combining both events into one" },
+            { "label": "B", "text": "Moving their meeting to another day" },
+            { "label": "C", "text": "Canceling the meeting entirely" },
+            { "label": "D", "text": "Sending a proxy to the briefing" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 7,
+      "context": "A team leader and a colleague discussing travel arrangements for a business conference.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Have you booked your flight for the conference in Frankfurt yet?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Not yet. I was checking if we’re supposed to arrive the night before or the same morning." },
+        { "sequence": 3, "speaker": "Man", "text": "Management wants everyone there for the welcome dinner on Thursday evening." },
+        { "sequence": 4, "speaker": "Woman", "text": "Got it. I’ll book the flight for Thursday afternoon then." }
+      ],
+      "questions": [
+        {
+          "id": 19,
+          "text": "What are the speakers planning for?",
+          "choices": [
+            { "label": "A", "text": "A client visit" },
+            { "label": "B", "text": "A company retreat" },
+            { "label": "C", "text": "A business conference" },
+            { "label": "D", "text": "A product launch event" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 20,
+          "text": "What is the woman unsure about?",
+          "choices": [
+            { "label": "A", "text": "What time her flight is" },
+            { "label": "B", "text": "Whether she should attend the dinner" },
+            { "label": "C", "text": "When she is supposed to travel" },
+            { "label": "D", "text": "Where the conference will take place" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 21,
+          "text": "Why does the man mention the dinner?",
+          "choices": [
+            { "label": "A", "text": "To recommend a restaurant" },
+            { "label": "B", "text": "To suggest skipping it" },
+            { "label": "C", "text": "To confirm the agenda" },
+            { "label": "D", "text": "To explain the travel timing" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 8,
+      "context": "A department head and an employee discussing performance evaluations.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Hi, Tom. I wanted to ask if we’re still submitting the annual evaluations by Friday." },
+        { "sequence": 2, "speaker": "Man", "text": "Actually, the deadline was extended to next Wednesday to give everyone more time." },
+        { "sequence": 3, "speaker": "Woman", "text": "That’s a relief. I’ve been swamped with the onboarding documents for the new hires." },
+        { "sequence": 4, "speaker": "Man", "text": "Understandable. Just make sure to submit yours by the new date so HR doesn’t follow up." }
+      ],
+      "questions": [
+        {
+          "id": 22,
+          "text": "What are the speakers mainly talking about?",
+          "choices": [
+            { "label": "A", "text": "Team restructuring" },
+            { "label": "B", "text": "Employee evaluations" },
+            { "label": "C", "text": "A recruitment interview" },
+            { "label": "D", "text": "A training seminar" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 23,
+          "text": "What has recently changed?",
+          "choices": [
+            { "label": "A", "text": "The evaluation criteria" },
+            { "label": "B", "text": "The department manager" },
+            { "label": "C", "text": "The submission deadline" },
+            { "label": "D", "text": "The HR software platform" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 24,
+          "text": "Why has the woman not finished the evaluations?",
+          "choices": [
+            { "label": "A", "text": "She didn’t know the deadline" },
+            { "label": "B", "text": "She was busy onboarding new employees" },
+            { "label": "C", "text": "She lost access to the system" },
+            { "label": "D", "text": "She is waiting for feedback" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 9,
+      "context": "Two colleagues reviewing progress on a marketing campaign.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "How’s the new social media campaign going?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Pretty well. Engagement has increased by 25% since we introduced the video series." },
+        { "sequence": 3, "speaker": "Man", "text": "That’s impressive. Are we still on track to launch the paid ads next Monday?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Yes, the graphics are ready and the budget’s been approved." }
+      ],
+      "questions": [
+        {
+          "id": 25,
+          "text": "What aspect of the campaign is mentioned as successful?",
+          "choices": [
+            { "label": "A", "text": "Customer conversion" },
+            { "label": "B", "text": "Email open rates" },
+            { "label": "C", "text": "Social media engagement" },
+            { "label": "D", "text": "Search engine ranking" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 26,
+          "text": "What is scheduled for next Monday?",
+          "choices": [
+            { "label": "A", "text": "A team presentation" },
+            { "label": "B", "text": "The start of an advertising campaign" },
+            { "label": "C", "text": "A product photo shoot" },
+            { "label": "D", "text": "An update to the campaign's strategy" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 27,
+          "text": "What does the woman say about the preparation?",
+          "choices": [
+            { "label": "A", "text": "They’re still waiting for approval" },
+            { "label": "B", "text": "The launch date might be delayed" },
+            { "label": "C", "text": "Everything is ready for launch" },
+            { "label": "D", "text": "They’re changing the target audience" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 10,
+      "context": "A finance officer and a department manager reviewing this quarter’s budget allocations.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "I noticed that your department has already used up 85% of its quarterly budget." },
+        { "sequence": 2, "speaker": "Man", "text": "Yes, most of it went into the hardware upgrades we discussed last month." },
+        { "sequence": 3, "speaker": "Woman", "text": "I see. Just keep in mind we still have two major invoice cycles before the end of the quarter." },
+        { "sequence": 4, "speaker": "Man", "text": "Understood. I’ll hold off on the software licenses until next cycle." }
+      ],
+      "questions": [
+        {
+          "id": 28,
+          "text": "What is the topic of the conversation?",
+          "choices": [
+            { "label": "A", "text": "Employee performance reviews" },
+            { "label": "B", "text": "Upcoming hiring plans" },
+            { "label": "C", "text": "Department budget usage" },
+            { "label": "D", "text": "Client project updates" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 29,
+          "text": "What caused most of the spending?",
+          "choices": [
+            { "label": "A", "text": "Business travel expenses" },
+            { "label": "B", "text": "Hardware purchases" },
+            { "label": "C", "text": "Employee bonuses" },
+            { "label": "D", "text": "Conference registrations" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 30,
+          "text": "What does the man say he will delay?",
+          "choices": [
+            { "label": "A", "text": "Ordering supplies" },
+            { "label": "B", "text": "Paying invoices" },
+            { "label": "C", "text": "Software license purchases" },
+            { "label": "D", "text": "Team training sessions" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 11,
+      "context": "A recruiter calling a candidate to confirm interview details.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Hi Ms. Greene, I just wanted to confirm your interview slot for Thursday at 2 p.m." },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, that works perfectly. Will it be in person or virtual?" },
+        { "sequence": 3, "speaker": "Man", "text": "It’ll be held on Zoom. We’ll send the link by tomorrow afternoon." },
+        { "sequence": 4, "speaker": "Woman", "text": "Great, I’ll keep an eye on my inbox." }
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "text": "What is being confirmed?",
+          "choices": [
+            { "label": "A", "text": "A flight booking" },
+            { "label": "B", "text": "A job interview schedule" },
+            { "label": "C", "text": "A virtual training session" },
+            { "label": "D", "text": "A delivery time" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 32,
+          "text": "What does the woman ask about?",
+          "choices": [
+            { "label": "A", "text": "The interview duration" },
+            { "label": "B", "text": "The dress code" },
+            { "label": "C", "text": "The interview format" },
+            { "label": "D", "text": "The interviewer's name" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 33,
+          "text": "What will the man do next?",
+          "choices": [
+            { "label": "A", "text": "Send an email with a Zoom link" },
+            { "label": "B", "text": "Reschedule the meeting" },
+            { "label": "C", "text": "Call her again tomorrow" },
+            { "label": "D", "text": "Send a text confirmation" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 12,
+      "context": "Two employees discussing access issues to a shared file system.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Are you able to access the Q2 reports folder? I keep getting a ‘permission denied’ error." },
+        { "sequence": 2, "speaker": "Man", "text": "I had the same issue yesterday. IT said they were updating folder permissions company-wide." },
+        { "sequence": 3, "speaker": "Woman", "text": "Oh, that explains it. Did they give an estimate for when access would be restored?" },
+        { "sequence": 4, "speaker": "Man", "text": "They mentioned it should be resolved by end of day." }
+      ],
+      "questions": [
+        {
+          "id": 34,
+          "text": "What issue is the woman experiencing?",
+          "choices": [
+            { "label": "A", "text": "Missing files in the system" },
+            { "label": "B", "text": "Incorrect file names" },
+            { "label": "C", "text": "Lack of access to a folder" },
+            { "label": "D", "text": "Slowness in loading documents" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 35,
+          "text": "What is the reason for the problem?",
+          "choices": [
+            { "label": "A", "text": "The folder was deleted accidentally" },
+            { "label": "B", "text": "Permissions are being updated" },
+            { "label": "C", "text": "The file server is down" },
+            { "label": "D", "text": "The internet is not working" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 36,
+          "text": "When will the issue likely be fixed?",
+          "choices": [
+            { "label": "A", "text": "In a few minutes" },
+            { "label": "B", "text": "By end of the day" },
+            { "label": "C", "text": "Next week" },
+            { "label": "D", "text": "It is already resolved" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 13,
+      "context": "Two employees discussing a delay in a supplier’s delivery.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did the shipment from Lutex arrive this morning?" },
+        { "sequence": 2, "speaker": "Woman", "text": "No, they emailed saying it’s been delayed due to customs processing." },
+        { "sequence": 3, "speaker": "Man", "text": "That’s going to hold us back on assembly. Did they give an estimate?" },
+        { "sequence": 4, "speaker": "Woman", "text": "They expect clearance by Friday, so it should be here Monday at the latest." }
+      ],
+      "questions": [
+        {
+          "id": 37,
+          "text": "What are the speakers waiting for?",
+          "choices": [
+            { "label": "A", "text": "A parts shipment" },
+            { "label": "B", "text": "Test results" },
+            { "label": "C", "text": "A client response" },
+            { "label": "D", "text": "A team report" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 38,
+          "text": "Why was the delivery delayed?",
+          "choices": [
+            { "label": "A", "text": "Bad weather" },
+            { "label": "B", "text": "A shipping error" },
+            { "label": "C", "text": "Customs issues" },
+            { "label": "D", "text": "Production delays" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 39,
+          "text": "When is the shipment expected to arrive?",
+          "choices": [
+            { "label": "A", "text": "Today" },
+            { "label": "B", "text": "Tomorrow" },
+            { "label": "C", "text": "Friday" },
+            { "label": "D", "text": "Monday" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 14,
+      "context": "A manager and a team member discussing training attendance.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "James, you didn’t attend the cybersecurity training this morning. Everything okay?" },
+        { "sequence": 2, "speaker": "Man", "text": "Sorry about that. I was in a call with a client that ran over time." },
+        { "sequence": 3, "speaker": "Woman", "text": "I understand. HR said there’s a make-up session next Tuesday." },
+        { "sequence": 4, "speaker": "Man", "text": "Perfect, I’ll make sure to register for it." }
+      ],
+      "questions": [
+        {
+          "id": 40,
+          "text": "Why did the man miss the training?",
+          "choices": [
+            { "label": "A", "text": "He forgot the schedule" },
+            { "label": "B", "text": "He had an urgent meeting" },
+            { "label": "C", "text": "He was working remotely" },
+            { "label": "D", "text": "He wasn’t invited" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 41,
+          "text": "What does the woman inform him about?",
+          "choices": [
+            { "label": "A", "text": "Another upcoming client meeting" },
+            { "label": "B", "text": "A training cancellation" },
+            { "label": "C", "text": "A second chance to attend the training" },
+            { "label": "D", "text": "A new cybersecurity policy" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 42,
+          "text": "What does the man say he will do?",
+          "choices": [
+            { "label": "A", "text": "Reschedule the client call" },
+            { "label": "B", "text": "Apologize to HR" },
+            { "label": "C", "text": "Watch the recorded session" },
+            { "label": "D", "text": "Sign up for the next session" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 15,
+      "context": "Two engineers discussing a failed prototype test.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did the prototype pass the stress test?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Unfortunately, no. The chassis cracked under load after 30 minutes." },
+        { "sequence": 3, "speaker": "Man", "text": "Hmm, we might need to consider using a different composite material." },
+        { "sequence": 4, "speaker": "Woman", "text": "I agree. I’ll reach out to the supplier and request samples." }
+      ],
+      "questions": [
+        {
+          "id": 43,
+          "text": "What happened during the test?",
+          "choices": [
+            { "label": "A", "text": "The equipment malfunctioned" },
+            { "label": "B", "text": "The chassis failed under pressure" },
+            { "label": "C", "text": "The prototype overheated" },
+            { "label": "D", "text": "The wrong test was used" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 44,
+          "text": "What are the speakers considering changing?",
+          "choices": [
+            { "label": "A", "text": "The supplier" },
+            { "label": "B", "text": "The team structure" },
+            { "label": "C", "text": "The material used" },
+            { "label": "D", "text": "The timeline" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 45,
+          "text": "What does the woman plan to do next?",
+          "choices": [
+            { "label": "A", "text": "Notify the project manager" },
+            { "label": "B", "text": "Run another test" },
+            { "label": "C", "text": "Call a team meeting" },
+            { "label": "D", "text": "Request new materials" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 16,
+      "context": "Two coworkers reviewing feedback from a client after a demo presentation.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Did you read the email from the client after the demo?" },
+        { "sequence": 2, "speaker": "Man", "text": "Yes, they liked the interface but had concerns about the loading time." },
+        { "sequence": 3, "speaker": "Woman", "text": "I thought they might mention that. We’re still optimizing the backend." },
+        { "sequence": 4, "speaker": "Man", "text": "Let’s aim to push the improvements before the next follow-up call next Tuesday." }
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "text": "What did the client like about the demo?",
+          "choices": [
+            { "label": "A", "text": "The speed of the app" },
+            { "label": "B", "text": "The design of the interface" },
+            { "label": "C", "text": "The customer service" },
+            { "label": "D", "text": "The data accuracy" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 47,
+          "text": "What issue did the client raise?",
+          "choices": [
+            { "label": "A", "text": "Security flaws" },
+            { "label": "B", "text": "Unclear documentation" },
+            { "label": "C", "text": "Slow performance" },
+            { "label": "D", "text": "Lack of customization" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 48,
+          "text": "What is the team planning to do?",
+          "choices": [
+            { "label": "A", "text": "Schedule another demo" },
+            { "label": "B", "text": "Hire more developers" },
+            { "label": "C", "text": "Improve performance before the next meeting" },
+            { "label": "D", "text": "Design a new layout" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 17,
+      "context": "A supervisor reminding an employee about safety compliance requirements.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Have you completed the new workplace safety module?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Not yet, I’ve been prioritizing the product testing checklist." },
+        { "sequence": 3, "speaker": "Man", "text": "It’s mandatory by Friday. Please don’t forget—it’s an audit requirement." },
+        { "sequence": 4, "speaker": "Woman", "text": "Got it. I’ll do it this afternoon." }
+      ],
+      "questions": [
+        {
+          "id": 49,
+          "text": "What has the woman not done yet?",
+          "choices": [
+            { "label": "A", "text": "Completed a product review" },
+            { "label": "B", "text": "Finished a safety training" },
+            { "label": "C", "text": "Attended a safety inspection" },
+            { "label": "D", "text": "Tested the new equipment" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 50,
+          "text": "Why is the training important?",
+          "choices": [
+            { "label": "A", "text": "It's needed for her promotion" },
+            { "label": "B", "text": "It’s part of onboarding" },
+            { "label": "C", "text": "It’s required for a workplace audit" },
+            { "label": "D", "text": "It’s suggested by HR" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 51,
+          "text": "When does the woman say she’ll complete it?",
+          "choices": [
+            { "label": "A", "text": "Tomorrow" },
+            { "label": "B", "text": "This afternoon" },
+            { "label": "C", "text": "On Friday morning" },
+            { "label": "D", "text": "Next week" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 18,
+      "context": "Two colleagues organizing tasks for a product launch event.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "We still need someone to handle the registration desk and manage name tags." },
+        { "sequence": 2, "speaker": "Man", "text": "I can take care of that if Lisa handles the catering logistics." },
+        { "sequence": 3, "speaker": "Woman", "text": "Perfect. I’ll confirm with her and finalize the list." },
+        { "sequence": 4, "speaker": "Man", "text": "Sounds good. I’ll print the attendee list this afternoon." }
+      ],
+      "questions": [
+        {
+          "id": 52,
+          "text": "What task does the man volunteer for?",
+          "choices": [
+            { "label": "A", "text": "Coordinating transportation" },
+            { "label": "B", "text": "Handling name tags and registration" },
+            { "label": "C", "text": "Presenting during the launch" },
+            { "label": "D", "text": "Managing the media booth" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 53,
+          "text": "What is the woman planning to do?",
+          "choices": [
+            { "label": "A", "text": "Contact the catering company" },
+            { "label": "B", "text": "Update the event program" },
+            { "label": "C", "text": "Check with another team member" },
+            { "label": "D", "text": "Print badges" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 54,
+          "text": "What does the man say he will do later today?",
+          "choices": [
+            { "label": "A", "text": "Buy office supplies" },
+            { "label": "B", "text": "Finalize the catering menu" },
+            { "label": "C", "text": "Print the attendee list" },
+            { "label": "D", "text": "Set up the booth" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 19,
+      "context": "A product manager and a developer reviewing app store rejections.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Apple rejected the latest build again. This time it’s because of the privacy labels." },
+        { "sequence": 2, "speaker": "Woman", "text": "Right, we didn’t update the tracking disclosures after adding analytics." },
+        { "sequence": 3, "speaker": "Man", "text": "Can you take care of updating the metadata and resubmitting?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Yes, I’ll push a hotfix and handle the upload today." }
+      ],
+      "questions": [
+        {
+          "id": 55,
+          "text": "Why was the app rejected?",
+          "choices": [
+            { "label": "A", "text": "A bug in the code" },
+            { "label": "B", "text": "Design inconsistency" },
+            { "label": "C", "text": "Missing privacy updates" },
+            { "label": "D", "text": "Late submission" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 56,
+          "text": "What was recently added to the app?",
+          "choices": [
+            { "label": "A", "text": "A payment feature" },
+            { "label": "B", "text": "New user profiles" },
+            { "label": "C", "text": "Analytics tracking" },
+            { "label": "D", "text": "Push notifications" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 57,
+          "text": "What will the woman do next?",
+          "choices": [
+            { "label": "A", "text": "Request a design review" },
+            { "label": "B", "text": "Fix the privacy settings and resubmit" },
+            { "label": "C", "text": "Contact Apple support" },
+            { "label": "D", "text": "Change the analytics tool" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 20,
+      "context": "A team leader giving feedback on a revised presentation.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "I reviewed the new slides you sent. Much better layout and clearer visuals." },
+        { "sequence": 2, "speaker": "Man", "text": "Thanks! I tried to reduce the text and focus on charts and icons instead." },
+        { "sequence": 3, "speaker": "Woman", "text": "It really works. Just double-check the numbers on slide 6—they seem off." },
+        { "sequence": 4, "speaker": "Man", "text": "Will do. I’ll compare them with the original data sheets before finalizing." }
+      ],
+      "questions": [
+        {
+          "id": 58,
+          "text": "What is the topic of the conversation?",
+          "choices": [
+            { "label": "A", "text": "An upcoming product launch" },
+            { "label": "B", "text": "A revised presentation" },
+            { "label": "C", "text": "Annual financial reports" },
+            { "label": "D", "text": "Team performance reviews" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 59,
+          "text": "What feedback does the woman give about the new version?",
+          "choices": [
+            { "label": "A", "text": "The visuals are more effective" },
+            { "label": "B", "text": "The layout is too complex" },
+            { "label": "C", "text": "It contains too much data" },
+            { "label": "D", "text": "The format is outdated" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 60,
+          "text": "What correction is suggested?",
+          "choices": [
+            { "label": "A", "text": "Update the design" },
+            { "label": "B", "text": "Fix a calculation error" },
+            { "label": "C", "text": "Add more slides" },
+            { "label": "D", "text": "Use fewer icons" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 21,
+      "context": "A sales manager and a representative discussing a missed opportunity with a potential client.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did we ever hear back from the Grafton Group about the proposal?" },
+        { "sequence": 2, "speaker": "Woman", "text": "No, they went with a different vendor. They said our pricing was too high." },
+        { "sequence": 3, "speaker": "Man", "text": "That’s unfortunate. Do we have a breakdown of their decision criteria?" },
+        { "sequence": 4, "speaker": "Woman", "text": "I asked for feedback. They mentioned speed of delivery and cost were key." }
+      ],
+      "questions": [
+        {
+          "id": 61,
+          "text": "What happened with the Grafton Group?",
+          "choices": [
+            { "label": "A", "text": "They delayed their project" },
+            { "label": "B", "text": "They accepted the proposal" },
+            { "label": "C", "text": "They chose a competitor" },
+            { "label": "D", "text": "They requested a new quote" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 62,
+          "text": "Why was the company’s offer rejected?",
+          "choices": [
+            { "label": "A", "text": "It lacked technical detail" },
+            { "label": "B", "text": "It didn’t meet compliance" },
+            { "label": "C", "text": "It was priced too high" },
+            { "label": "D", "text": "It arrived too late" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 63,
+          "text": "What factors influenced the client’s decision?",
+          "choices": [
+            { "label": "A", "text": "Reputation and reviews" },
+            { "label": "B", "text": "Delivery speed and cost" },
+            { "label": "C", "text": "Design and packaging" },
+            { "label": "D", "text": "Availability of staff" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 22,
+      "context": "An HR representative and a new employee discussing onboarding paperwork.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Have you submitted your ID and tax documents to payroll yet?" },
+        { "sequence": 2, "speaker": "Man", "text": "Not yet, I’ve been trying to access the portal but it keeps giving me an error." },
+        { "sequence": 3, "speaker": "Woman", "text": "It might be your browser. Try using Chrome, it’s more compatible." },
+        { "sequence": 4, "speaker": "Man", "text": "Thanks, I’ll give that a shot and finish it up this afternoon." }
+      ],
+      "questions": [
+        {
+          "id": 64,
+          "text": "What is the man trying to do?",
+          "choices": [
+            { "label": "A", "text": "Schedule an interview" },
+            { "label": "B", "text": "Access onboarding documents" },
+            { "label": "C", "text": "Submit feedback" },
+            { "label": "D", "text": "Request time off" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 65,
+          "text": "What problem is the man facing?",
+          "choices": [
+            { "label": "A", "text": "He forgot his password" },
+            { "label": "B", "text": "The portal shows an error" },
+            { "label": "C", "text": "His documents are incomplete" },
+            { "label": "D", "text": "He didn’t receive the email" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 66,
+          "text": "What does the woman suggest?",
+          "choices": [
+            { "label": "A", "text": "Try using a different browser" },
+            { "label": "B", "text": "Reset his password" },
+            { "label": "C", "text": "Contact the IT team" },
+            { "label": "D", "text": "Use the mobile app" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 23,
+      "context": "Two coworkers discussing how to prepare for an upcoming client pitch.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Are we including the cost comparison chart in the pitch deck?" },
+        { "sequence": 2, "speaker": "Woman", "text": "I think we should. It really highlights our value versus competitors." },
+        { "sequence": 3, "speaker": "Man", "text": "Good point. Should we also bring printed versions?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Yes, at least five copies. Some clients prefer paper." }
+      ],
+      "questions": [
+        {
+          "id": 67,
+          "text": "What are the speakers preparing?",
+          "choices": [
+            { "label": "A", "text": "A training session" },
+            { "label": "B", "text": "A financial audit" },
+            { "label": "C", "text": "A client pitch" },
+            { "label": "D", "text": "An internal report" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 68,
+          "text": "Why does the woman want to include the cost chart?",
+          "choices": [
+            { "label": "A", "text": "To explain their pricing strategy" },
+            { "label": "B", "text": "To compare their offer with others" },
+            { "label": "C", "text": "To show how costs have changed" },
+            { "label": "D", "text": "To present their team’s budget" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 69,
+          "text": "What do they decide to bring to the meeting?",
+          "choices": [
+            { "label": "A", "text": "A video presentation" },
+            { "label": "B", "text": "Gifts for clients" },
+            { "label": "C", "text": "Printed materials" },
+            { "label": "D", "text": "Business cards only" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 24,
+      "context": "A marketing team leader discussing survey results with a colleague.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "I’ve reviewed the customer survey results from the last quarter." },
+        { "sequence": 2, "speaker": "Man", "text": "Any standout findings?" },
+        { "sequence": 3, "speaker": "Woman", "text": "Yes. Satisfaction with product quality was high, but delivery time was a major issue." },
+        { "sequence": 4, "speaker": "Man", "text": "Then we need to raise that in the logistics review next week." }
+      ],
+      "questions": [
+        {
+          "id": 70,
+          "text": "What kind of data are the speakers discussing?",
+          "choices": [
+            { "label": "A", "text": "Sales projections" },
+            { "label": "B", "text": "Customer survey feedback" },
+            { "label": "C", "text": "Website analytics" },
+            { "label": "D", "text": "Quarterly earnings" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 71,
+          "text": "What was positively rated?",
+          "choices": [
+            { "label": "A", "text": "Support service" },
+            { "label": "B", "text": "Mobile experience" },
+            { "label": "C", "text": "Product quality" },
+            { "label": "D", "text": "Pricing strategy" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 72,
+          "text": "What issue will be addressed next week?",
+          "choices": [
+            { "label": "A", "text": "Packaging design" },
+            { "label": "B", "text": "Late deliveries" },
+            { "label": "C", "text": "Advertising" },
+            { "label": "D", "text": "Customer support scripts" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 25,
+      "context": "Two colleagues planning a booth at a technology expo.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Do we have enough flyers printed for the event?" },
+        { "sequence": 2, "speaker": "Woman", "text": "We have 200, but with foot traffic last year, we might need double that." },
+        { "sequence": 3, "speaker": "Man", "text": "Alright, I’ll place a rush order this afternoon." },
+        { "sequence": 4, "speaker": "Woman", "text": "Great, and I’ll follow up with the organizer about our booth location." }
+      ],
+      "questions": [
+        {
+          "id": 73,
+          "text": "What are the speakers preparing for?",
+          "choices": [
+            { "label": "A", "text": "An internal workshop" },
+            { "label": "B", "text": "A trade exhibition" },
+            { "label": "C", "text": "A product launch" },
+            { "label": "D", "text": "An online webinar" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 74,
+          "text": "What concern does the woman express?",
+          "choices": [
+            { "label": "A", "text": "They don’t have enough banners" },
+            { "label": "B", "text": "They might run out of flyers" },
+            { "label": "C", "text": "They forgot to book a speaker" },
+            { "label": "D", "text": "Their booth is not confirmed" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 75,
+          "text": "What action will the man take?",
+          "choices": [
+            { "label": "A", "text": "Call the hotel" },
+            { "label": "B", "text": "Order more flyers" },
+            { "label": "C", "text": "Create a digital invitation" },
+            { "label": "D", "text": "Cancel the event booking" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 26,
+      "context": "A manager following up with an employee about their project task status.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "How's the user manual coming along? We're presenting to the client on Thursday." },
+        { "sequence": 2, "speaker": "Woman", "text": "I’m halfway through. I should be done by tomorrow morning." },
+        { "sequence": 3, "speaker": "Man", "text": "Good. Be sure to send it for review as soon as it’s ready." },
+        { "sequence": 4, "speaker": "Woman", "text": "Will do. I’ll share it before noon." }
+      ],
+      "questions": [
+        {
+          "id": 76,
+          "text": "What is the woman currently working on?",
+          "choices": [
+            { "label": "A", "text": "A software update" },
+            { "label": "B", "text": "A financial report" },
+            { "label": "C", "text": "A user manual" },
+            { "label": "D", "text": "A presentation deck" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 77,
+          "text": "When is the manual due?",
+          "choices": [
+            { "label": "A", "text": "Thursday afternoon" },
+            { "label": "B", "text": "Tomorrow morning" },
+            { "label": "C", "text": "Next Monday" },
+            { "label": "D", "text": "Today at noon" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 78,
+          "text": "What is the man’s request?",
+          "choices": [
+            { "label": "A", "text": "Add more diagrams to the manual" },
+            { "label": "B", "text": "Send the manual for review once it’s ready" },
+            { "label": "C", "text": "Print a copy for the meeting" },
+            { "label": "D", "text": "Update the delivery schedule" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 27,
+      "context": "An office administrator and a vendor discussing a printer maintenance issue.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Hi, we’re having trouble with one of the printers—it keeps jamming on double-sided prints." },
+        { "sequence": 2, "speaker": "Man", "text": "That’s likely the paper feed rollers. I can send someone by this afternoon." },
+        { "sequence": 3, "speaker": "Woman", "text": "That would be great. It’s the main printer for the third floor." },
+        { "sequence": 4, "speaker": "Man", "text": "Understood. I’ll dispatch a technician before 3 p.m." }
+      ],
+      "questions": [
+        {
+          "id": 79,
+          "text": "What problem is being reported?",
+          "choices": [
+            { "label": "A", "text": "The printer is out of toner" },
+            { "label": "B", "text": "The printer isn't connected to the network" },
+            { "label": "C", "text": "The printer is jamming on double-sided prints" },
+            { "label": "D", "text": "The printer doesn’t turn on" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 80,
+          "text": "What does the man say might be causing the issue?",
+          "choices": [
+            { "label": "A", "text": "Low toner levels" },
+            { "label": "B", "text": "Old paper feed rollers" },
+            { "label": "C", "text": "Driver incompatibility" },
+            { "label": "D", "text": "Paper tray misalignment" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 81,
+          "text": "What will happen later in the day?",
+          "choices": [
+            { "label": "A", "text": "A new printer will be delivered" },
+            { "label": "B", "text": "A technician will visit the office" },
+            { "label": "C", "text": "The administrator will try a repair" },
+            { "label": "D", "text": "The printer will be replaced" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 28,
+      "context": "A software developer asking a colleague for help with a bug.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Can you help me with a bug I’m stuck on? The login page crashes if the username is blank." },
+        { "sequence": 2, "speaker": "Woman", "text": "Sounds like a missing null check. Have you tried validating the input on the front end?" },
+        { "sequence": 3, "speaker": "Man", "text": "I did, but maybe it’s not triggering correctly." },
+        { "sequence": 4, "speaker": "Woman", "text": "Let’s add server-side validation too, just to be safe." }
+      ],
+      "questions": [
+        {
+          "id": 82,
+          "text": "What problem is the man experiencing?",
+          "choices": [
+            { "label": "A", "text": "Password field not updating" },
+            { "label": "B", "text": "Slow page loading" },
+            { "label": "C", "text": "Page crashes when username is empty" },
+            { "label": "D", "text": "Login button unresponsive" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 83,
+          "text": "What solution does the woman suggest first?",
+          "choices": [
+            { "label": "A", "text": "Using a try-catch block" },
+            { "label": "B", "text": "Adding client-side input validation" },
+            { "label": "C", "text": "Changing the login endpoint" },
+            { "label": "D", "text": "Restarting the server" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 84,
+          "text": "What additional step is proposed?",
+          "choices": [
+            { "label": "A", "text": "Server-side validation" },
+            { "label": "B", "text": "Unit testing" },
+            { "label": "C", "text": "Disabling the login page" },
+            { "label": "D", "text": "Upgrading the database" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 29,
+      "context": "Two coworkers discussing the layout of a company newsletter.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Do you think the employee spotlight section should go near the top or the bottom?" },
+        { "sequence": 2, "speaker": "Man", "text": "Top. People are more likely to read it if it’s right after the intro." },
+        { "sequence": 3, "speaker": "Woman", "text": "Makes sense. What about the upcoming events?" },
+        { "sequence": 4, "speaker": "Man", "text": "Those can go at the end—people can scroll down for that." }
+      ],
+      "questions": [
+        {
+          "id": 85,
+          "text": "What are the speakers working on?",
+          "choices": [
+            { "label": "A", "text": "A PowerPoint presentation" },
+            { "label": "B", "text": "A company newsletter" },
+            { "label": "C", "text": "An annual report" },
+            { "label": "D", "text": "A product brochure" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 86,
+          "text": "Where does the man suggest placing the spotlight section?",
+          "choices": [
+            { "label": "A", "text": "At the bottom" },
+            { "label": "B", "text": "After the events section" },
+            { "label": "C", "text": "Near the top" },
+            { "label": "D", "text": "In the footer" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 87,
+          "text": "Where will the events section go?",
+          "choices": [
+            { "label": "A", "text": "At the end" },
+            { "label": "B", "text": "In the sidebar" },
+            { "label": "C", "text": "At the beginning" },
+            { "label": "D", "text": "In the middle" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 30,
+      "context": "An IT specialist and an employee talking about email access issues.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "My Outlook keeps saying ‘Cannot connect to server.’ I haven’t received any emails since this morning." },
+        { "sequence": 2, "speaker": "Woman", "text": "There’s a known issue with the mail server after the maintenance update." },
+        { "sequence": 3, "speaker": "Man", "text": "Any idea when it’ll be fixed?" },
+        { "sequence": 4, "speaker": "Woman", "text": "IT is working on it now. It should be back up in about an hour." }
+      ],
+      "questions": [
+        {
+          "id": 88,
+          "text": "What issue is the man experiencing?",
+          "choices": [
+            { "label": "A", "text": "He can't send large attachments" },
+            { "label": "B", "text": "His Outlook won’t connect to the server" },
+            { "label": "C", "text": "He forgot his password" },
+            { "label": "D", "text": "His account was deactivated" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 89,
+          "text": "What caused the issue?",
+          "choices": [
+            { "label": "A", "text": "An expired certificate" },
+            { "label": "B", "text": "A user error" },
+            { "label": "C", "text": "A failed maintenance update" },
+            { "label": "D", "text": "A power outage" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 90,
+          "text": "When is the issue expected to be resolved?",
+          "choices": [
+            { "label": "A", "text": "In an hour" },
+            { "label": "B", "text": "Tomorrow morning" },
+            { "label": "C", "text": "In the next five minutes" },
+            { "label": "D", "text": "Next week" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 31,
+      "context": "Two coworkers reviewing the agenda for an upcoming board meeting.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "I’ve drafted the agenda for the board meeting. Do you want to take a look?" },
+        { "sequence": 2, "speaker": "Man", "text": "Sure. Are we including the quarterly financials this time?" },
+        { "sequence": 3, "speaker": "Woman", "text": "Yes, right after the marketing update. We also need to confirm who’s presenting." },
+        { "sequence": 4, "speaker": "Man", "text": "Let’s ask Rachel to handle that part—she’s been leading the budget analysis." }
+      ],
+      "questions": [
+        {
+          "id": 91,
+          "text": "What document is being discussed?",
+          "choices": [
+            { "label": "A", "text": "A project report" },
+            { "label": "B", "text": "A training schedule" },
+            { "label": "C", "text": "A meeting agenda" },
+            { "label": "D", "text": "An annual newsletter" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 92,
+          "text": "What item will follow the marketing update?",
+          "choices": [
+            { "label": "A", "text": "Sales strategy" },
+            { "label": "B", "text": "Quarterly financials" },
+            { "label": "C", "text": "Hiring plan" },
+            { "label": "D", "text": "Customer feedback" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 93,
+          "text": "Who is suggested as the presenter?",
+          "choices": [
+            { "label": "A", "text": "Rachel" },
+            { "label": "B", "text": "The man" },
+            { "label": "C", "text": "The woman" },
+            { "label": "D", "text": "The CFO" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 32,
+      "context": "An IT technician helping an employee with a software installation.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "I’m trying to install the new CRM software, but it says I need admin privileges." },
+        { "sequence": 2, "speaker": "Woman", "text": "That’s normal. I’ll remote in and authorize it for you." },
+        { "sequence": 3, "speaker": "Man", "text": "Thanks. Will I need to restart afterward?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Yes, but it should only take a minute." }
+      ],
+      "questions": [
+        {
+          "id": 94,
+          "text": "What problem is the man facing?",
+          "choices": [
+            { "label": "A", "text": "He can’t find the software installer" },
+            { "label": "B", "text": "He forgot his password" },
+            { "label": "C", "text": "He needs admin access to install software" },
+            { "label": "D", "text": "His computer won't turn on" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 95,
+          "text": "How does the woman plan to help?",
+          "choices": [
+            { "label": "A", "text": "She will visit his desk" },
+            { "label": "B", "text": "She will grant remote access" },
+            { "label": "C", "text": "She will call the vendor" },
+            { "label": "D", "text": "She will send a new license" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 96,
+          "text": "What will happen after the installation?",
+          "choices": [
+            { "label": "A", "text": "The user must restart the computer" },
+            { "label": "B", "text": "A full backup will run" },
+            { "label": "C", "text": "The user will lose access" },
+            { "label": "D", "text": "The installer will prompt for a key" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 33,
+      "context": "Two employees discussing the company’s holiday schedule.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Have you seen the holiday calendar update for December?" },
+        { "sequence": 2, "speaker": "Man", "text": "Not yet. Are we getting the full week off between Christmas and New Year’s?" },
+        { "sequence": 3, "speaker": "Woman", "text": "Yes, the office will be closed, and we don’t need to take PTO." },
+        { "sequence": 4, "speaker": "Man", "text": "That’s great news. I’ll book my trip tonight!" }
+      ],
+      "questions": [
+        {
+          "id": 97,
+          "text": "What are the speakers discussing?",
+          "choices": [
+            { "label": "A", "text": "A conference schedule" },
+            { "label": "B", "text": "A company bonus plan" },
+            { "label": "C", "text": "Holiday office closures" },
+            { "label": "D", "text": "Client meetings" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 98,
+          "text": "What is the man happy about?",
+          "choices": [
+            { "label": "A", "text": "He doesn’t need to submit a time-off request" },
+            { "label": "B", "text": "He can work remotely" },
+            { "label": "C", "text": "He got a travel voucher" },
+            { "label": "D", "text": "He’s receiving a bonus" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 99,
+          "text": "What does the man plan to do next?",
+          "choices": [
+            { "label": "A", "text": "Book a hotel" },
+            { "label": "B", "text": "Tell his manager" },
+            { "label": "C", "text": "Schedule meetings" },
+            { "label": "D", "text": "Plan a vacation" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 34,
+      "context": "A product team lead and a designer discussing feedback from a usability test.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Users seemed confused about how to save their changes in the app." },
+        { "sequence": 2, "speaker": "Woman", "text": "Yeah, the save button isn’t visible unless you scroll down." },
+        { "sequence": 3, "speaker": "Man", "text": "We should move it to the top-right corner—more intuitive there." },
+        { "sequence": 4, "speaker": "Woman", "text": "I’ll mock that up and test it again this week." }
+      ],
+      "questions": [
+        {
+          "id": 100,
+          "text": "What issue did users experience?",
+          "choices": [
+            { "label": "A", "text": "They couldn't find the login option" },
+            { "label": "B", "text": "They didn’t know how to save changes" },
+            { "label": "C", "text": "The app wouldn’t load data" },
+            { "label": "D", "text": "Their settings weren’t saved" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 101,
+          "text": "What is the cause of the issue?",
+          "choices": [
+            { "label": "A", "text": "The save button is hidden below the fold" },
+            { "label": "B", "text": "The app has a glitch" },
+            { "label": "C", "text": "The icon is not labeled" },
+            { "label": "D", "text": "There’s no save option" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 102,
+          "text": "What will the woman do next?",
+          "choices": [
+            { "label": "A", "text": "Schedule more interviews" },
+            { "label": "B", "text": "Mock up a new button layout" },
+            { "label": "C", "text": "Add a loading spinner" },
+            { "label": "D", "text": "Update the app icon" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 35,
+      "context": "A team leader and a team member reviewing a task list for a client handover.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Are we ready to hand over the documentation to the client?" },
+        { "sequence": 2, "speaker": "Man", "text": "Almost. I still need to finalize the system diagram and upload the user guide." },
+        { "sequence": 3, "speaker": "Woman", "text": "Make sure to double-check version numbers—they caught a mismatch last time." },
+        { "sequence": 4, "speaker": "Man", "text": "Will do. I’ll wrap it up by the end of the day." }
+      ],
+      "questions": [
+        {
+          "id": 103,
+          "text": "What are the speakers preparing for?",
+          "choices": [
+            { "label": "A", "text": "An internal audit" },
+            { "label": "B", "text": "A performance review" },
+            { "label": "C", "text": "A client handover" },
+            { "label": "D", "text": "A technical presentation" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 104,
+          "text": "What still needs to be done?",
+          "choices": [
+            { "label": "A", "text": "Update the calendar invite" },
+            { "label": "B", "text": "Send the invoice" },
+            { "label": "C", "text": "Upload a user guide and finalize a diagram" },
+            { "label": "D", "text": "Print the contract" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 105,
+          "text": "What mistake was made previously?",
+          "choices": [
+            { "label": "A", "text": "Incorrect formatting" },
+            { "label": "B", "text": "Missing deliverables" },
+            { "label": "C", "text": "Mismatched version numbers" },
+            { "label": "D", "text": "Late submission" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 36,
+      "context": "Two coworkers reviewing a draft of a press release.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did you get a chance to read through the draft of the press release?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, it’s solid overall, but I think the headline could be punchier." },
+        { "sequence": 3, "speaker": "Man", "text": "Alright, I’ll rework it. Anything else?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Maybe shorten the quote from the CEO. It’s a bit long-winded." }
+      ],
+      "questions": [
+        {
+          "id": 106,
+          "text": "What are the speakers reviewing?",
+          "choices": [
+            { "label": "A", "text": "An internal memo" },
+            { "label": "B", "text": "A press release draft" },
+            { "label": "C", "text": "A product specification" },
+            { "label": "D", "text": "A speech script" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 107,
+          "text": "What change does the woman suggest for the headline?",
+          "choices": [
+            { "label": "A", "text": "Make it more exciting" },
+            { "label": "B", "text": "Add a date to it" },
+            { "label": "C", "text": "Include the product name" },
+            { "label": "D", "text": "Use a question instead" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 108,
+          "text": "What does she think about the CEO's quote?",
+          "choices": [
+            { "label": "A", "text": "It’s missing details" },
+            { "label": "B", "text": "It needs to be removed" },
+            { "label": "C", "text": "It’s too long" },
+            { "label": "D", "text": "It has a typo" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 37,
+      "context": "A warehouse supervisor speaking to a delivery coordinator about a shipment delay.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "The shipment from the East Depot still hasn’t arrived." },
+        { "sequence": 2, "speaker": "Man", "text": "Yeah, the truck had a mechanical issue. It’s being repaired now." },
+        { "sequence": 3, "speaker": "Woman", "text": "Will that delay the rest of the schedule?" },
+        { "sequence": 4, "speaker": "Man", "text": "Only by a few hours. We’re rerouting some orders to make up time." }
+      ],
+      "questions": [
+        {
+          "id": 109,
+          "text": "What caused the delay?",
+          "choices": [
+            { "label": "A", "text": "Heavy traffic" },
+            { "label": "B", "text": "A mechanical problem" },
+            { "label": "C", "text": "A scheduling error" },
+            { "label": "D", "text": "A missing driver" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 110,
+          "text": "How long is the delay expected to last?",
+          "choices": [
+            { "label": "A", "text": "Several days" },
+            { "label": "B", "text": "A few hours" },
+            { "label": "C", "text": "About one week" },
+            { "label": "D", "text": "Until further notice" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 111,
+          "text": "What action is being taken to minimize the delay?",
+          "choices": [
+            { "label": "A", "text": "Cancelling orders" },
+            { "label": "B", "text": "Calling the depot" },
+            { "label": "C", "text": "Rerouting deliveries" },
+            { "label": "D", "text": "Rescheduling shipments" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 38,
+      "context": "A manager asking an employee about a pending client presentation.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Have you finalized the slides for the Jenson presentation yet?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Not quite. I’m waiting for the latest client data to update the charts." },
+        { "sequence": 3, "speaker": "Man", "text": "Try to finish by this afternoon—review is first thing tomorrow." },
+        { "sequence": 4, "speaker": "Woman", "text": "Understood. I’ll prioritize it right after lunch." }
+      ],
+      "questions": [
+        {
+          "id": 112,
+          "text": "Why hasn’t the presentation been finalized?",
+          "choices": [
+            { "label": "A", "text": "The client hasn’t confirmed the meeting" },
+            { "label": "B", "text": "The design is incomplete" },
+            { "label": "C", "text": "They’re waiting for updated data" },
+            { "label": "D", "text": "The charts are incorrect" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 113,
+          "text": "When is the presentation review scheduled?",
+          "choices": [
+            { "label": "A", "text": "Tomorrow morning" },
+            { "label": "B", "text": "This afternoon" },
+            { "label": "C", "text": "Next week" },
+            { "label": "D", "text": "Friday" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 114,
+          "text": "What does the woman plan to do?",
+          "choices": [
+            { "label": "A", "text": "Cancel the presentation" },
+            { "label": "B", "text": "Delegate the task" },
+            { "label": "C", "text": "Work on it after lunch" },
+            { "label": "D", "text": "Send it without the data" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 39,
+      "context": "Two coworkers coordinating access to a shared cloud storage account.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Do you have the login for the marketing drive? I’m trying to upload the new graphics." },
+        { "sequence": 2, "speaker": "Man", "text": "Yes, but they changed the password last week after the team reshuffle." },
+        { "sequence": 3, "speaker": "Woman", "text": "Okay, can you send me the updated one?" },
+        { "sequence": 4, "speaker": "Man", "text": "Sure, I’ll forward it to your work email." }
+      ],
+      "questions": [
+        {
+          "id": 115,
+          "text": "Why can’t the woman access the drive?",
+          "choices": [
+            { "label": "A", "text": "She doesn't have permission" },
+            { "label": "B", "text": "The drive is full" },
+            { "label": "C", "text": "The password was recently changed" },
+            { "label": "D", "text": "She is offline" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 116,
+          "text": "What caused the password change?",
+          "choices": [
+            { "label": "A", "text": "A security breach" },
+            { "label": "B", "text": "A change in team structure" },
+            { "label": "C", "text": "An IT system upgrade" },
+            { "label": "D", "text": "New file restrictions" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 117,
+          "text": "How will the man help?",
+          "choices": [
+            { "label": "A", "text": "Call IT support" },
+            { "label": "B", "text": "Send the new password" },
+            { "label": "C", "text": "Grant her access via admin panel" },
+            { "label": "D", "text": "Share the folder via USB" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 40,
+      "context": "A team leader checking in with a colleague about a training session attendance.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did you manage to attend the compliance training yesterday?" },
+        { "sequence": 2, "speaker": "Woman", "text": "No, I was stuck in traffic and missed the start. I didn’t think it made sense to join late." },
+        { "sequence": 3, "speaker": "Man", "text": "There’s another session next week. Make sure to register—it’s mandatory." },
+        { "sequence": 4, "speaker": "Woman", "text": "Thanks, I’ll sign up right away." }
+      ],
+      "questions": [
+        {
+          "id": 118,
+          "text": "Why did the woman miss the training?",
+          "choices": [
+            { "label": "A", "text": "She forgot about it" },
+            { "label": "B", "text": "She was traveling" },
+            { "label": "C", "text": "She was delayed in traffic" },
+            { "label": "D", "text": "She had another meeting" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 119,
+          "text": "What does the man say about the training?",
+          "choices": [
+            { "label": "A", "text": "It is optional" },
+            { "label": "B", "text": "It has been canceled" },
+            { "label": "C", "text": "Another session is scheduled" },
+            { "label": "D", "text": "Only some staff must attend" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 120,
+          "text": "What does the woman plan to do?",
+          "choices": [
+            { "label": "A", "text": "Attend a virtual session" },
+            { "label": "B", "text": "Watch the recording" },
+            { "label": "C", "text": "Sign up for the next session" },
+            { "label": "D", "text": "Call the trainer" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 41,
+      "context": "A product owner and a developer discussing sprint planning.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "For the next sprint, we need to prioritize the mobile bug fixes." },
+        { "sequence": 2, "speaker": "Man", "text": "Okay. Should I move the new onboarding feature to the backlog?" },
+        { "sequence": 3, "speaker": "Woman", "text": "Yes, let’s delay that. Client feedback on the mobile app was pretty negative." },
+        { "sequence": 4, "speaker": "Man", "text": "Understood. I’ll update the Jira board this morning." }
+      ],
+      "questions": [
+        {
+          "id": 121,
+          "text": "What does the woman say should be the priority?",
+          "choices": [
+            { "label": "A", "text": "New user onboarding" },
+            { "label": "B", "text": "Desktop UI improvements" },
+            { "label": "C", "text": "Mobile app bug fixes" },
+            { "label": "D", "text": "Performance testing" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 122,
+          "text": "What caused the change in priorities?",
+          "choices": [
+            { "label": "A", "text": "Team feedback" },
+            { "label": "B", "text": "Client complaints" },
+            { "label": "C", "text": "Server crashes" },
+            { "label": "D", "text": "New management directive" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 123,
+          "text": "What tool will the man use to make updates?",
+          "choices": [
+            { "label": "A", "text": "Asana" },
+            { "label": "B", "text": "Trello" },
+            { "label": "C", "text": "Jira" },
+            { "label": "D", "text": "Slack" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 42,
+      "context": "A manager checking in with an intern about progress on a research task.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "How’s the competitor analysis coming along?" },
+        { "sequence": 2, "speaker": "Woman", "text": "I’ve finished the first two companies. I’m starting the third now." },
+        { "sequence": 3, "speaker": "Man", "text": "Nice. Be sure to include screenshots of their pricing pages this time." },
+        { "sequence": 4, "speaker": "Woman", "text": "Will do. I’ll have a draft ready by tomorrow morning." }
+      ],
+      "questions": [
+        {
+          "id": 124,
+          "text": "What task is the woman working on?",
+          "choices": [
+            { "label": "A", "text": "Market survey" },
+            { "label": "B", "text": "Customer interview" },
+            { "label": "C", "text": "Competitor analysis" },
+            { "label": "D", "text": "Financial audit" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 125,
+          "text": "What specific detail does the man ask her to add?",
+          "choices": [
+            { "label": "A", "text": "Pricing screenshots" },
+            { "label": "B", "text": "Client testimonials" },
+            { "label": "C", "text": "Company logos" },
+            { "label": "D", "text": "Sales figures" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 126,
+          "text": "When does the woman plan to send a draft?",
+          "choices": [
+            { "label": "A", "text": "Later today" },
+            { "label": "B", "text": "Tomorrow morning" },
+            { "label": "C", "text": "Next week" },
+            { "label": "D", "text": "This weekend" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 43,
+      "context": "A team member updating a colleague on conference call arrangements.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Have you sent the dial-in details for tomorrow’s call?" },
+        { "sequence": 2, "speaker": "Man", "text": "Yes, they’re in the calendar invite. Everyone on the list has access." },
+        { "sequence": 3, "speaker": "Woman", "text": "Great. Did you include the new client rep from Zurich?" },
+        { "sequence": 4, "speaker": "Man", "text": "Oops, I’ll add her now. Thanks for the reminder!" }
+      ],
+      "questions": [
+        {
+          "id": 127,
+          "text": "What are the speakers discussing?",
+          "choices": [
+            { "label": "A", "text": "Scheduling a business trip" },
+            { "label": "B", "text": "A conference call setup" },
+            { "label": "C", "text": "A sales report draft" },
+            { "label": "D", "text": "An internal workshop" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 128,
+          "text": "What was missing initially?",
+          "choices": [
+            { "label": "A", "text": "The meeting link" },
+            { "label": "B", "text": "The calendar invite" },
+            { "label": "C", "text": "A participant" },
+            { "label": "D", "text": "Time zone details" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 129,
+          "text": "What will the man do next?",
+          "choices": [
+            { "label": "A", "text": "Send a summary email" },
+            { "label": "B", "text": "Add a missing contact" },
+            { "label": "C", "text": "Cancel the meeting" },
+            { "label": "D", "text": "Change the call time" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 44,
+      "context": "Two coworkers planning for an end-of-quarter report.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "We need to finalize the end-of-quarter report by Friday." },
+        { "sequence": 2, "speaker": "Woman", "text": "I’ve compiled the sales and expense figures. Marketing still needs to send their section." },
+        { "sequence": 3, "speaker": "Man", "text": "Let’s send them a reminder today. We can’t afford another delay." },
+        { "sequence": 4, "speaker": "Woman", "text": "I’ll follow up with their team lead now." }
+      ],
+      "questions": [
+        {
+          "id": 130,
+          "text": "What document are they working on?",
+          "choices": [
+            { "label": "A", "text": "A sales pitch" },
+            { "label": "B", "text": "An expense report" },
+            { "label": "C", "text": "A quarterly report" },
+            { "label": "D", "text": "A product review" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 131,
+          "text": "What part of the report is missing?",
+          "choices": [
+            { "label": "A", "text": "HR data" },
+            { "label": "B", "text": "Marketing input" },
+            { "label": "C", "text": "Technical specs" },
+            { "label": "D", "text": "Customer feedback" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 132,
+          "text": "What action will the woman take?",
+          "choices": [
+            { "label": "A", "text": "Submit the draft early" },
+            { "label": "B", "text": "Call the finance team" },
+            { "label": "C", "text": "Send a reminder to marketing" },
+            { "label": "D", "text": "Update the report structure" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 45,
+      "context": "A team member asking for clarification about a meeting location.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Is tomorrow’s meeting in the main building or the annex?" },
+        { "sequence": 2, "speaker": "Man", "text": "The annex, room 3B. They moved it because of the HVAC work upstairs." },
+        { "sequence": 3, "speaker": "Woman", "text": "Thanks. I’ll let the others know—some were still assuming the usual room." },
+        { "sequence": 4, "speaker": "Man", "text": "Good idea. I’ll update the invite too, just in case." }
+      ],
+      "questions": [
+        {
+          "id": 133,
+          "text": "What is being clarified?",
+          "choices": [
+            { "label": "A", "text": "Meeting time" },
+            { "label": "B", "text": "Agenda topic" },
+            { "label": "C", "text": "Meeting location" },
+            { "label": "D", "text": "Dress code" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 134,
+          "text": "Why was the meeting moved?",
+          "choices": [
+            { "label": "A", "text": "Room double-booked" },
+            { "label": "B", "text": "Technical issues" },
+            { "label": "C", "text": "Construction upstairs" },
+            { "label": "D", "text": "Presenter availability" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 135,
+          "text": "What will the man do next?",
+          "choices": [
+            { "label": "A", "text": "Cancel the meeting" },
+            { "label": "B", "text": "Update the calendar invite" },
+            { "label": "C", "text": "Print out flyers" },
+            { "label": "D", "text": "Book another room" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 46,
+      "context": "Two team members discussing preparations for a job fair.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did we receive the company brochures for the university job fair?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, they arrived this morning. I left them in the conference room." },
+        { "sequence": 3, "speaker": "Man", "text": "Perfect. Do we also have the banner and tablecloth?" },
+        { "sequence": 4, "speaker": "Woman", "text": "They’re packed and ready to go with the booth materials." }
+      ],
+      "questions": [
+        {
+          "id": 136,
+          "text": "What event are the speakers preparing for?",
+          "choices": [
+            { "label": "A", "text": "A product launch" },
+            { "label": "B", "text": "A trade show" },
+            { "label": "C", "text": "A job fair" },
+            { "label": "D", "text": "An internal training session" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 137,
+          "text": "Where were the brochures placed?",
+          "choices": [
+            { "label": "A", "text": "At the reception" },
+            { "label": "B", "text": "In the break room" },
+            { "label": "C", "text": "In the conference room" },
+            { "label": "D", "text": "In the manager's office" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 138,
+          "text": "What else is confirmed to be ready?",
+          "choices": [
+            { "label": "A", "text": "The speaker list" },
+            { "label": "B", "text": "Travel arrangements" },
+            { "label": "C", "text": "Display materials" },
+            { "label": "D", "text": "Presentation slides" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 47,
+      "context": "A supervisor discussing an overtime request with an employee.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "I saw your overtime request for Saturday. What’s the reason?" },
+        { "sequence": 2, "speaker": "Man", "text": "I want to finish testing the new API integration. It’s the last item before deployment." },
+        { "sequence": 3, "speaker": "Woman", "text": "Alright, but please make sure to log your hours correctly in the system." },
+        { "sequence": 4, "speaker": "Man", "text": "Will do. I’ll include notes in the ticket as well." }
+      ],
+      "questions": [
+        {
+          "id": 139,
+          "text": "Why is the man requesting overtime?",
+          "choices": [
+            { "label": "A", "text": "He missed work earlier in the week" },
+            { "label": "B", "text": "He needs to complete API testing" },
+            { "label": "C", "text": "He’s catching up on documentation" },
+            { "label": "D", "text": "He’s scheduled for training" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 140,
+          "text": "What does the woman remind him to do?",
+          "choices": [
+            { "label": "A", "text": "Update the changelog" },
+            { "label": "B", "text": "Notify the client" },
+            { "label": "C", "text": "Log his hours properly" },
+            { "label": "D", "text": "Submit a leave request" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 141,
+          "text": "What else will the man do?",
+          "choices": [
+            { "label": "A", "text": "Push to production" },
+            { "label": "B", "text": "Write a user manual" },
+            { "label": "C", "text": "Add notes to a support ticket" },
+            { "label": "D", "text": "Email the QA team" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 48,
+      "context": "Two coworkers discussing company travel policy changes.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did you read the new travel policy? They’ve changed the reimbursement limits." },
+        { "sequence": 2, "speaker": "Woman", "text": "Yeah, I noticed. Meals are capped at $40 per day now." },
+        { "sequence": 3, "speaker": "Man", "text": "And hotel rates have a new upper limit depending on the city." },
+        { "sequence": 4, "speaker": "Woman", "text": "We’ll have to double-check everything before booking from now on." }
+      ],
+      "questions": [
+        {
+          "id": 142,
+          "text": "What is the main topic of the conversation?",
+          "choices": [
+            { "label": "A", "text": "Changes in the hiring process" },
+            { "label": "B", "text": "Project deadlines" },
+            { "label": "C", "text": "Updated travel reimbursement policies" },
+            { "label": "D", "text": "Holiday schedules" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 143,
+          "text": "What is the new meal reimbursement limit?",
+          "choices": [
+            { "label": "A", "text": "$50 per day" },
+            { "label": "B", "text": "$35 per meal" },
+            { "label": "C", "text": "$40 per day" },
+            { "label": "D", "text": "$100 per trip" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 144,
+          "text": "What do the speakers say they must now do?",
+          "choices": [
+            { "label": "A", "text": "Book all travel through HR" },
+            { "label": "B", "text": "Submit receipts in advance" },
+            { "label": "C", "text": "Check cost limits before booking" },
+            { "label": "D", "text": "Avoid international travel" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 49,
+      "context": "An employee and a manager reviewing feedback from a training session.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "How was the cybersecurity training last week?" },
+        { "sequence": 2, "speaker": "Man", "text": "Pretty informative. The phishing simulation caught almost half the team, though." },
+        { "sequence": 3, "speaker": "Woman", "text": "That’s a bit concerning. We’ll probably need a refresher course." },
+        { "sequence": 4, "speaker": "Man", "text": "Agreed. I can prepare a short follow-up for next Friday." }
+      ],
+      "questions": [
+        {
+          "id": 145,
+          "text": "What was the topic of the training?",
+          "choices": [
+            { "label": "A", "text": "Password management" },
+            { "label": "B", "text": "Cybersecurity awareness" },
+            { "label": "C", "text": "Time tracking tools" },
+            { "label": "D", "text": "Software development" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 146,
+          "text": "What surprised the speakers?",
+          "choices": [
+            { "label": "A", "text": "The low attendance" },
+            { "label": "B", "text": "The number of successful phishing attempts" },
+            { "label": "C", "text": "The course being too short" },
+            { "label": "D", "text": "The outdated materials" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 147,
+          "text": "What do they plan to do next?",
+          "choices": [
+            { "label": "A", "text": "Hire a security expert" },
+            { "label": "B", "text": "Send a report to IT" },
+            { "label": "C", "text": "Schedule a follow-up session" },
+            { "label": "D", "text": "Block external emails" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 50,
+      "context": "Two coworkers discussing a problem with shared calendar access.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Are you able to see the updated meeting invites? Mine aren’t syncing across devices." },
+        { "sequence": 2, "speaker": "Woman", "text": "I had that issue yesterday. IT said to log out and log back in—fixed it right away." },
+        { "sequence": 3, "speaker": "Man", "text": "Alright, I’ll try that. Hopefully it works before my 2 p.m. call." },
+        { "sequence": 4, "speaker": "Woman", "text": "If not, ask IT to reset your sync settings." }
+      ],
+      "questions": [
+        {
+          "id": 148,
+          "text": "What issue is the man having?",
+          "choices": [
+            { "label": "A", "text": "He can’t open meeting files" },
+            { "label": "B", "text": "He isn’t receiving updates on his calendar" },
+            { "label": "C", "text": "He was removed from a group chat" },
+            { "label": "D", "text": "He forgot the meeting password" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 149,
+          "text": "What does the woman suggest first?",
+          "choices": [
+            { "label": "A", "text": "Reboot the system" },
+            { "label": "B", "text": "Update the app" },
+            { "label": "C", "text": "Sign out and sign back in" },
+            { "label": "D", "text": "Delete old meetings" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 150,
+          "text": "What should the man do if the issue continues?",
+          "choices": [
+            { "label": "A", "text": "Restart the router" },
+            { "label": "B", "text": "Reinstall the calendar app" },
+            { "label": "C", "text": "Contact IT for a sync reset" },
+            { "label": "D", "text": "Create a new email account" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 51,
+      "context": "Two colleagues discussing last-minute changes to a presentation.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "The client asked if we can include their latest Q1 results in the slides." },
+        { "sequence": 2, "speaker": "Man", "text": "I’ll need to update the financial chart and reformat the layout a bit." },
+        { "sequence": 3, "speaker": "Woman", "text": "Okay, but don’t forget we’re presenting at 10 a.m. sharp tomorrow." },
+        { "sequence": 4, "speaker": "Man", "text": "No worries. I’ll finish the edits tonight and send the final version." }
+      ],
+      "questions": [
+        {
+          "id": 151,
+          "text": "What request did the client make?",
+          "choices": [
+            { "label": "A", "text": "To change the color scheme" },
+            { "label": "B", "text": "To shorten the presentation" },
+            { "label": "C", "text": "To add recent quarterly results" },
+            { "label": "D", "text": "To cancel the meeting" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 152,
+          "text": "What must the man do to the presentation?",
+          "choices": [
+            { "label": "A", "text": "Translate it to French" },
+            { "label": "B", "text": "Update charts and layout" },
+            { "label": "C", "text": "Print copies" },
+            { "label": "D", "text": "Record a voiceover" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 153,
+          "text": "When is the final version due?",
+          "choices": [
+            { "label": "A", "text": "This afternoon" },
+            { "label": "B", "text": "Tomorrow at noon" },
+            { "label": "C", "text": "Tonight" },
+            { "label": "D", "text": "Next Monday" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 52,
+      "context": "A remote employee and their manager discussing work-from-home equipment.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "The webcam you sent isn’t working properly. The image keeps freezing." },
+        { "sequence": 2, "speaker": "Woman", "text": "That’s odd. Did you install the latest drivers?" },
+        { "sequence": 3, "speaker": "Man", "text": "Not yet. I’ll check the manufacturer’s site and try that first." },
+        { "sequence": 4, "speaker": "Woman", "text": "Let me know if it still doesn't work—we’ll send you a replacement." }
+      ],
+      "questions": [
+        {
+          "id": 154,
+          "text": "What issue is the man experiencing?",
+          "choices": [
+            { "label": "A", "text": "He cannot hear audio" },
+            { "label": "B", "text": "The webcam freezes" },
+            { "label": "C", "text": "The mouse is unresponsive" },
+            { "label": "D", "text": "The laptop won’t charge" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 155,
+          "text": "What does the woman ask about?",
+          "choices": [
+            { "label": "A", "text": "Whether he tried another USB port" },
+            { "label": "B", "text": "If the camera has been dropped" },
+            { "label": "C", "text": "Whether the drivers are up to date" },
+            { "label": "D", "text": "If the power supply is working" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 156,
+          "text": "What is the next step if the issue persists?",
+          "choices": [
+            { "label": "A", "text": "Send back the camera for a refund" },
+            { "label": "B", "text": "Borrow one from a colleague" },
+            { "label": "C", "text": "Receive a new device" },
+            { "label": "D", "text": "Switch to a different video platform" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 53,
+      "context": "Two employees discussing their roles for an upcoming client workshop.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "So I’ll handle the introduction and walkthrough of the agenda." },
+        { "sequence": 2, "speaker": "Man", "text": "Great, then I’ll take care of the product demo and Q&A." },
+        { "sequence": 3, "speaker": "Woman", "text": "Let’s sync on timing later. We only have 45 minutes total." },
+        { "sequence": 4, "speaker": "Man", "text": "Got it. I’ll keep my section under 20 minutes to stay on track." }
+      ],
+      "questions": [
+        {
+          "id": 157,
+          "text": "What kind of event are the speakers preparing for?",
+          "choices": [
+            { "label": "A", "text": "An internal training" },
+            { "label": "B", "text": "A team-building retreat" },
+            { "label": "C", "text": "A client workshop" },
+            { "label": "D", "text": "A job interview" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 158,
+          "text": "What will the man be responsible for?",
+          "choices": [
+            { "label": "A", "text": "Setting up the meeting room" },
+            { "label": "B", "text": "Presenting the agenda" },
+            { "label": "C", "text": "Leading the demo and Q&A" },
+            { "label": "D", "text": "Taking notes" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 159,
+          "text": "How much time will the man use for his section?",
+          "choices": [
+            { "label": "A", "text": "15 minutes" },
+            { "label": "B", "text": "20 minutes" },
+            { "label": "C", "text": "30 minutes" },
+            { "label": "D", "text": "45 minutes" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 54,
+      "context": "A project manager and a developer checking in on a ticket's status.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Did you get a chance to review the critical bug in ticket #421?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, I reproduced the issue and committed a patch this morning." },
+        { "sequence": 3, "speaker": "Man", "text": "Awesome. Do you think it needs QA approval before merging?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Definitely. I’ve flagged it for priority review." }
+      ],
+      "questions": [
+        {
+          "id": 160,
+          "text": "What is being discussed?",
+          "choices": [
+            { "label": "A", "text": "A feature request" },
+            { "label": "B", "text": "A budget report" },
+            { "label": "C", "text": "A critical software bug" },
+            { "label": "D", "text": "A marketing campaign" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 161,
+          "text": "What has the woman already done?",
+          "choices": [
+            { "label": "A", "text": "Escalated the ticket to IT" },
+            { "label": "B", "text": "Fixed and submitted a patch" },
+            { "label": "C", "text": "Closed the ticket" },
+            { "label": "D", "text": "Tested the new feature" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 162,
+          "text": "What is the next step before merging?",
+          "choices": [
+            { "label": "A", "text": "Client approval" },
+            { "label": "B", "text": "Security scan" },
+            { "label": "C", "text": "QA validation" },
+            { "label": "D", "text": "Team vote" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 55,
+      "context": "Two coworkers discussing a missed client deadline.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "We didn’t send the proposal to the client by Monday, did we?" },
+        { "sequence": 2, "speaker": "Man", "text": "No, there was a delay getting the pricing info from procurement." },
+        { "sequence": 3, "speaker": "Woman", "text": "Let’s send an updated version today with a note apologizing for the delay." },
+        { "sequence": 4, "speaker": "Man", "text": "Agreed. I’ll include a revised timeline too." }
+      ],
+      "questions": [
+        {
+          "id": 163,
+          "text": "What was missed?",
+          "choices": [
+            { "label": "A", "text": "A training session" },
+            { "label": "B", "text": "A team meeting" },
+            { "label": "C", "text": "A proposal submission" },
+            { "label": "D", "text": "A system upgrade" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 164,
+          "text": "Why was the deadline missed?",
+          "choices": [
+            { "label": "A", "text": "Technical difficulties" },
+            { "label": "B", "text": "Staff shortage" },
+            { "label": "C", "text": "Delayed pricing details" },
+            { "label": "D", "text": "Incorrect client info" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 165,
+          "text": "What will be included in today’s message?",
+          "choices": [
+            { "label": "A", "text": "An apology and a new timeline" },
+            { "label": "B", "text": "A discount coupon" },
+            { "label": "C", "text": "A survey link" },
+            { "label": "D", "text": "A product sample" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 56,
+      "context": "A team leader checking in with a graphic designer about a rebranding project.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "How’s the new logo concept coming along?" },
+        { "sequence": 2, "speaker": "Woman", "text": "I’ve got three rough drafts. Want me to send them over for early feedback?" },
+        { "sequence": 3, "speaker": "Man", "text": "Yes, please. We’ll shortlist one before the client meeting next week." },
+        { "sequence": 4, "speaker": "Woman", "text": "Got it. I’ll share them by the end of the day." }
+      ],
+      "questions": [
+        {
+          "id": 166,
+          "text": "What is the woman working on?",
+          "choices": [
+            { "label": "A", "text": "A client onboarding guide" },
+            { "label": "B", "text": "A company logo design" },
+            { "label": "C", "text": "A brand naming survey" },
+            { "label": "D", "text": "A product manual" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 167,
+          "text": "What does the man want to do before the client meeting?",
+          "choices": [
+            { "label": "A", "text": "Print all logo versions" },
+            { "label": "B", "text": "Share a branding survey" },
+            { "label": "C", "text": "Select one draft logo" },
+            { "label": "D", "text": "Create a style guide" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 168,
+          "text": "When will the woman send the drafts?",
+          "choices": [
+            { "label": "A", "text": "Right after lunch" },
+            { "label": "B", "text": "Tomorrow morning" },
+            { "label": "C", "text": "Next week" },
+            { "label": "D", "text": "By the end of the day" }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "conversationId": 57,
+      "context": "A marketing coordinator talking to their manager about a social media campaign.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "The ad campaign started yesterday, and engagement's already up 12%." },
+        { "sequence": 2, "speaker": "Man", "text": "Nice! How’s the video performing compared to the carousel post?" },
+        { "sequence": 3, "speaker": "Woman", "text": "The video’s pulling ahead on clicks, but the carousel has better shares." },
+        { "sequence": 4, "speaker": "Man", "text": "Let’s boost the carousel then—it’s getting us visibility." }
+      ],
+      "questions": [
+        {
+          "id": 169,
+          "text": "What kind of campaign are they discussing?",
+          "choices": [
+            { "label": "A", "text": "A print media campaign" },
+            { "label": "B", "text": "A social media ad campaign" },
+            { "label": "C", "text": "A cold email campaign" },
+            { "label": "D", "text": "An internal survey campaign" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 170,
+          "text": "Which content is getting more clicks?",
+          "choices": [
+            { "label": "A", "text": "The image gallery" },
+            { "label": "B", "text": "The carousel post" },
+            { "label": "C", "text": "The video" },
+            { "label": "D", "text": "The blog post" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 171,
+          "text": "What action does the man suggest?",
+          "choices": [
+            { "label": "A", "text": "Replace the video" },
+            { "label": "B", "text": "Boost the carousel post" },
+            { "label": "C", "text": "Pause the campaign" },
+            { "label": "D", "text": "Launch a new product" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 58,
+      "context": "An HR manager and an employee discussing annual leave policies.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Can I carry over my unused vacation days to next year?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Only up to five days, according to our policy." },
+        { "sequence": 3, "speaker": "Man", "text": "I’ve got seven left. What happens to the extra two?" },
+        { "sequence": 4, "speaker": "Woman", "text": "They’ll expire unless you use them by the end of the month." }
+      ],
+      "questions": [
+        {
+          "id": 172,
+          "text": "What is the man asking about?",
+          "choices": [
+            { "label": "A", "text": "Paternity leave policy" },
+            { "label": "B", "text": "Sick day rollover" },
+            { "label": "C", "text": "Carrying over vacation days" },
+            { "label": "D", "text": "Work-from-home approval" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 173,
+          "text": "What is the maximum number of days that can be carried over?",
+          "choices": [
+            { "label": "A", "text": "5" },
+            { "label": "B", "text": "7" },
+            { "label": "C", "text": "10" },
+            { "label": "D", "text": "Unlimited" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 174,
+          "text": "What will happen to the extra two days?",
+          "choices": [
+            { "label": "A", "text": "They’ll be paid out" },
+            { "label": "B", "text": "They will expire" },
+            { "label": "C", "text": "They’ll be donated to another employee" },
+            { "label": "D", "text": "They can be converted to sick days" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 59,
+      "context": "Two IT support staff reviewing a ticket escalation procedure.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "This ticket’s been open for three days. Should we escalate it?" },
+        { "sequence": 2, "speaker": "Man", "text": "Yes, the SLA for high-priority issues is 48 hours." },
+        { "sequence": 3, "speaker": "Woman", "text": "Okay, I’ll flag it and notify the Tier 2 team." },
+        { "sequence": 4, "speaker": "Man", "text": "Good call. Let’s make sure to log the escalation in the system too." }
+      ],
+      "questions": [
+        {
+          "id": 175,
+          "text": "How long has the ticket been open?",
+          "choices": [
+            { "label": "A", "text": "One day" },
+            { "label": "B", "text": "Two days" },
+            { "label": "C", "text": "Three days" },
+            { "label": "D", "text": "Four days" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 176,
+          "text": "What is the SLA for high-priority tickets?",
+          "choices": [
+            { "label": "A", "text": "24 hours" },
+            { "label": "B", "text": "48 hours" },
+            { "label": "C", "text": "72 hours" },
+            { "label": "D", "text": "One week" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 177,
+          "text": "What will the woman do next?",
+          "choices": [
+            { "label": "A", "text": "Close the ticket" },
+            { "label": "B", "text": "Notify Tier 2 support" },
+            { "label": "C", "text": "Email the client" },
+            { "label": "D", "text": "Reassign it to herself" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 60,
+      "context": "A facilities coordinator and an employee discussing office renovations.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Are we still scheduled to begin the lobby renovation next Monday?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, the contractors are arriving at 8 a.m. sharp." },
+        { "sequence": 3, "speaker": "Man", "text": "Will the side entrance remain open?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Exactly. That’ll be the main access point during the work." }
+      ],
+      "questions": [
+        {
+          "id": 178,
+          "text": "What renovation is being discussed?",
+          "choices": [
+            { "label": "A", "text": "The main office kitchen" },
+            { "label": "B", "text": "The meeting room" },
+            { "label": "C", "text": "The lobby" },
+            { "label": "D", "text": "The parking lot" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 179,
+          "text": "When will the work begin?",
+          "choices": [
+            { "label": "A", "text": "Tomorrow" },
+            { "label": "B", "text": "Next Monday" },
+            { "label": "C", "text": "This Friday" },
+            { "label": "D", "text": "In two weeks" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 180,
+          "text": "How will employees enter the building?",
+          "choices": [
+            { "label": "A", "text": "Through the side entrance" },
+            { "label": "B", "text": "Through the garage" },
+            { "label": "C", "text": "Via the roof stairwell" },
+            { "label": "D", "text": "Using temporary stairs" }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "conversationId": 61,
+      "context": "Two colleagues discussing feedback on a website redesign.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "The client liked the new layout, but they want the contact form at the top." },
+        { "sequence": 2, "speaker": "Man", "text": "Makes sense. They probably want more conversions." },
+        { "sequence": 3, "speaker": "Woman", "text": "Exactly. They said it's currently getting buried too far down." },
+        { "sequence": 4, "speaker": "Man", "text": "I'll move it just below the banner and adjust the spacing." }
+      ],
+      "questions": [
+        {
+          "id": 181,
+          "text": "What feedback did the client give?",
+          "choices": [
+            { "label": "A", "text": "To shorten the page" },
+            { "label": "B", "text": "To change the colors" },
+            { "label": "C", "text": "To move the contact form" },
+            { "label": "D", "text": "To add more photos" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 182,
+          "text": "Why does the man think the change was requested?",
+          "choices": [
+            { "label": "A", "text": "To increase user engagement" },
+            { "label": "B", "text": "To reduce server load" },
+            { "label": "C", "text": "To follow brand guidelines" },
+            { "label": "D", "text": "To improve conversion rates" }
+          ],
+          "answer": "D"
+        },
+        {
+          "id": 183,
+          "text": "Where will the contact form be placed?",
+          "choices": [
+            { "label": "A", "text": "Above the footer" },
+            { "label": "B", "text": "Below the banner" },
+            { "label": "C", "text": "On a separate page" },
+            { "label": "D", "text": "Inside the navigation bar" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 62,
+      "context": "A manager giving feedback to a new hire after their first week.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "You’ve settled in quickly this week. Great job on the client onboarding checklist." },
+        { "sequence": 2, "speaker": "Woman", "text": "Thank you! It helped that you walked me through the tools on day one." },
+        { "sequence": 3, "speaker": "Man", "text": "That’s good to hear. Let me know if you want to shadow the next kickoff meeting." },
+        { "sequence": 4, "speaker": "Woman", "text": "I'd love that. I want to learn how you handle project scopes." }
+      ],
+      "questions": [
+        {
+          "id": 184,
+          "text": "What is the conversation about?",
+          "choices": [
+            { "label": "A", "text": "Scheduling a client meeting" },
+            { "label": "B", "text": "Feedback on a first week" },
+            { "label": "C", "text": "Accessing onboarding tools" },
+            { "label": "D", "text": "Organizing a team event" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 185,
+          "text": "What did the woman find helpful?",
+          "choices": [
+            { "label": "A", "text": "Written instructions" },
+            { "label": "B", "text": "A checklist template" },
+            { "label": "C", "text": "A tool tutorial" },
+            { "label": "D", "text": "A team introduction" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 186,
+          "text": "What opportunity is the woman interested in?",
+          "choices": [
+            { "label": "A", "text": "Leading a demo" },
+            { "label": "B", "text": "Joining a sales call" },
+            { "label": "C", "text": "Shadowing a project kickoff" },
+            { "label": "D", "text": "Training new employees" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 63,
+      "context": "A customer support agent helping a client with a billing issue.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Hi, I was charged twice for last month’s subscription." },
+        { "sequence": 2, "speaker": "Man", "text": "I see the duplicate transaction. That usually happens if the payment times out." },
+        { "sequence": 3, "speaker": "Woman", "text": "Can you refund one of the charges?" },
+        { "sequence": 4, "speaker": "Man", "text": "Of course. You’ll see the refund on your card within 3 to 5 business days." }
+      ],
+      "questions": [
+        {
+          "id": 187,
+          "text": "Why did the woman call support?",
+          "choices": [
+            { "label": "A", "text": "Her subscription was cancelled" },
+            { "label": "B", "text": "She didn’t receive an invoice" },
+            { "label": "C", "text": "She was charged twice" },
+            { "label": "D", "text": "She forgot to update her card" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 188,
+          "text": "What caused the issue, according to the man?",
+          "choices": [
+            { "label": "A", "text": "An expired card" },
+            { "label": "B", "text": "A duplicate login" },
+            { "label": "C", "text": "A timeout during payment" },
+            { "label": "D", "text": "A system upgrade" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 189,
+          "text": "How long will the refund take?",
+          "choices": [
+            { "label": "A", "text": "24 hours" },
+            { "label": "B", "text": "3 to 5 business days" },
+            { "label": "C", "text": "7 to 10 days" },
+            { "label": "D", "text": "Instantly" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 64,
+      "context": "Two coworkers discussing IT security training compliance.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Hey, have you completed the security awareness module yet?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Not yet, I didn’t know it was mandatory for contractors too." },
+        { "sequence": 3, "speaker": "Man", "text": "Yeah, they made it company-wide this year." },
+        { "sequence": 4, "speaker": "Woman", "text": "Alright, I’ll get it done before Friday." }
+      ],
+      "questions": [
+        {
+          "id": 190,
+          "text": "What are the speakers discussing?",
+          "choices": [
+            { "label": "A", "text": "Holiday work schedules" },
+            { "label": "B", "text": "Security training compliance" },
+            { "label": "C", "text": "Remote access policies" },
+            { "label": "D", "text": "Client access rights" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 191,
+          "text": "Why hadn’t the woman done the training yet?",
+          "choices": [
+            { "label": "A", "text": "She didn’t have time" },
+            { "label": "B", "text": "She didn’t receive the link" },
+            { "label": "C", "text": "She thought it didn’t apply to her" },
+            { "label": "D", "text": "She was waiting for IT approval" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 192,
+          "text": "When does the woman plan to finish it?",
+          "choices": [
+            { "label": "A", "text": "Today" },
+            { "label": "B", "text": "Before Friday" },
+            { "label": "C", "text": "Next week" },
+            { "label": "D", "text": "Over the weekend" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 65,
+      "context": "A logistics coordinator and a warehouse manager discussing a shipping delay.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Did the order from Lyon get processed yet?" },
+        { "sequence": 2, "speaker": "Man", "text": "Not yet—the supplier delayed shipment due to a packaging issue." },
+        { "sequence": 3, "speaker": "Woman", "text": "That’s going to push us back on the international deliveries." },
+        { "sequence": 4, "speaker": "Man", "text": "I know. I’m checking with alternate vendors now." }
+      ],
+      "questions": [
+        {
+          "id": 193,
+          "text": "What caused the delay?",
+          "choices": [
+            { "label": "A", "text": "Holiday closure" },
+            { "label": "B", "text": "Packaging problems" },
+            { "label": "C", "text": "Customs clearance" },
+            { "label": "D", "text": "Labor strike" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 194,
+          "text": "What is affected by the delay?",
+          "choices": [
+            { "label": "A", "text": "Customer refunds" },
+            { "label": "B", "text": "Vendor payments" },
+            { "label": "C", "text": "International deliveries" },
+            { "label": "D", "text": "Pricing negotiations" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 195,
+          "text": "What is the man doing to solve the problem?",
+          "choices": [
+            { "label": "A", "text": "Delaying the order further" },
+            { "label": "B", "text": "Contacting other suppliers" },
+            { "label": "C", "text": "Requesting partial shipment" },
+            { "label": "D", "text": "Canceling the contract" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 66,
+      "context": "Two coworkers discussing the launch of a new internal tool.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Is the new ticketing system going live today?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, IT deployed it this morning. It replaces the old support form." },
+        { "sequence": 3, "speaker": "Man", "text": "Cool. Has the team been trained on how to use it?" },
+        { "sequence": 4, "speaker": "Woman", "text": "A quick guide was sent out yesterday. It’s pretty intuitive." }
+      ],
+      "questions": [
+        {
+          "id": 196,
+          "text": "What change is happening today?",
+          "choices": [
+            { "label": "A", "text": "A website update" },
+            { "label": "B", "text": "A system shutdown" },
+            { "label": "C", "text": "A new tool launch" },
+            { "label": "D", "text": "A training session" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 197,
+          "text": "What does the new system replace?",
+          "choices": [
+            { "label": "A", "text": "The old calendar app" },
+            { "label": "B", "text": "The email support channel" },
+            { "label": "C", "text": "A paper form" },
+            { "label": "D", "text": "An old support form" }
+          ],
+          "answer": "D"
+        },
+        {
+          "id": 198,
+          "text": "How did the team receive instructions?",
+          "choices": [
+            { "label": "A", "text": "In-person training" },
+            { "label": "B", "text": "Via a user manual" },
+            { "label": "C", "text": "Through an email guide" },
+            { "label": "D", "text": "During a webinar" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 67,
+      "context": "An employee discussing delayed project materials with a supplier.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "We were expecting the printed manuals yesterday. What happened?" },
+        { "sequence": 2, "speaker": "Man", "text": "The shipment was delayed due to a machine malfunction. They're being reprinted today." },
+        { "sequence": 3, "speaker": "Woman", "text": "Will we still receive them before the client meeting on Friday?" },
+        { "sequence": 4, "speaker": "Man", "text": "Yes, you’ll have them by Thursday at the latest." }
+      ],
+      "questions": [
+        {
+          "id": 199,
+          "text": "What was delayed?",
+          "choices": [
+            { "label": "A", "text": "A set of printed manuals" },
+            { "label": "B", "text": "A software update" },
+            { "label": "C", "text": "A delivery of computers" },
+            { "label": "D", "text": "An installation service" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 200,
+          "text": "What caused the delay?",
+          "choices": [
+            { "label": "A", "text": "Traffic congestion" },
+            { "label": "B", "text": "Incorrect address" },
+            { "label": "C", "text": "Machine malfunction" },
+            { "label": "D", "text": "Missing payment" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 201,
+          "text": "When will the materials arrive?",
+          "choices": [
+            { "label": "A", "text": "On Friday morning" },
+            { "label": "B", "text": "By Thursday" },
+            { "label": "C", "text": "Over the weekend" },
+            { "label": "D", "text": "Next week" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 68,
+      "context": "Two team leads discussing training attendance records.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "Do you have the attendance sheet from the Monday session?" },
+        { "sequence": 2, "speaker": "Woman", "text": "Yes, I just finished updating it. Two people were absent." },
+        { "sequence": 3, "speaker": "Man", "text": "We need to schedule a make-up session for them before the end of the quarter." },
+        { "sequence": 4, "speaker": "Woman", "text": "I’ll propose two slots and see which one they can attend." }
+      ],
+      "questions": [
+        {
+          "id": 202,
+          "text": "What are the speakers reviewing?",
+          "choices": [
+            { "label": "A", "text": "Employee salaries" },
+            { "label": "B", "text": "A training attendance sheet" },
+            { "label": "C", "text": "Project milestone deadlines" },
+            { "label": "D", "text": "Client invoices" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 203,
+          "text": "How many employees missed the session?",
+          "choices": [
+            { "label": "A", "text": "One" },
+            { "label": "B", "text": "Two" },
+            { "label": "C", "text": "Three" },
+            { "label": "D", "text": "Four" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 204,
+          "text": "What will the woman do?",
+          "choices": [
+            { "label": "A", "text": "Send a report to HR" },
+            { "label": "B", "text": "Cancel the training" },
+            { "label": "C", "text": "Offer time slots for a make-up session" },
+            { "label": "D", "text": "Reschedule the entire program" }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "conversationId": 69,
+      "context": "Two designers planning deliverables for a client project.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Woman", "text": "Did you upload the final assets to the client’s shared folder?" },
+        { "sequence": 2, "speaker": "Man", "text": "Yes, I added both the web and print versions last night." },
+        { "sequence": 3, "speaker": "Woman", "text": "Perfect. I’ll email them now and include the style guide." },
+        { "sequence": 4, "speaker": "Man", "text": "Sounds good. Let me know if they ask for editable files too." }
+      ],
+      "questions": [
+        {
+          "id": 205,
+          "text": "What files did the man upload?",
+          "choices": [
+            { "label": "A", "text": "Only print assets" },
+            { "label": "B", "text": "Editable source files" },
+            { "label": "C", "text": "Web and print versions" },
+            { "label": "D", "text": "Client invoices" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 206,
+          "text": "What will the woman do next?",
+          "choices": [
+            { "label": "A", "text": "Export new graphics" },
+            { "label": "B", "text": "Email the client with files and guide" },
+            { "label": "C", "text": "Request budget approval" },
+            { "label": "D", "text": "Share a download link" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 207,
+          "text": "What does the man want to be informed about?",
+          "choices": [
+            { "label": "A", "text": "Any feedback on layout" },
+            { "label": "B", "text": "If the client needs source files" },
+            { "label": "C", "text": "If the folder is full" },
+            { "label": "D", "text": "Whether the guide has been updated" }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "conversationId": 70,
+      "context": "Two colleagues discussing coffee machine maintenance in the office.",
+      "utterances": [
+        { "sequence": 1, "speaker": "Man", "text": "The coffee machine on our floor is leaking again." },
+        { "sequence": 2, "speaker": "Woman", "text": "That’s the third time this month. I’ll call the maintenance company." },
+        { "sequence": 3, "speaker": "Man", "text": "Should we ask for a replacement instead?" },
+        { "sequence": 4, "speaker": "Woman", "text": "Good idea. I’ll check if we’re still under warranty." }
+      ],
+      "questions": [
+        {
+          "id": 208,
+          "text": "What problem are the speakers discussing?",
+          "choices": [
+            { "label": "A", "text": "Coffee machine leaking" },
+            { "label": "B", "text": "Missing filters" },
+            { "label": "C", "text": "No water supply" },
+            { "label": "D", "text": "Broken payment system" }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 209,
+          "text": "What does the man suggest?",
+          "choices": [
+            { "label": "A", "text": "Cleaning the machine" },
+            { "label": "B", "text": "Calling a plumber" },
+            { "label": "C", "text": "Asking for a replacement" },
+            { "label": "D", "text": "Moving the machine downstairs" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 210,
+          "text": "What will the woman check?",
+          "choices": [
+            { "label": "A", "text": "User manual instructions" },
+            { "label": "B", "text": "Filter availability" },
+            { "label": "C", "text": "Power connection" },
+            { "label": "D", "text": "Warranty status" }
+          ],
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}
